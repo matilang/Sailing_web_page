@@ -1,6 +1,7 @@
 To install required dependencies run: **npm install**
 To run application run in terminal:
 1. **sailing-webpage\server> npm start** to start the server
+2. \n
 2.**sailing-webpage> npm start** to start the frontend
 
 Credentials for user's with given roles for testing purposes:
