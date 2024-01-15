@@ -1,0 +1,142 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+	--mainColor: #043865;
+	--mainColorLight: #043865;
+    --mainColorLighter: #084982;
+	--secondaryColor: #db2b39;
+	--textColor: #eee;
+    --secondary: #052f52;
+	--sideColor: #072138;
+	--white: #e4f1fe;
+}
+
+
+
+.title-bar {
+    background-color: #e9f0f5;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.container1 {
+    max-width: 900px;
+}
+.backtrace {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 10px;
+    left: 260px;
+}
+
+.pages {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.pages a {
+    text-decoration: none;
+}
+
+.separator {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.title-block {
+    font-size: 3rem;
+    text-align: left;
+}
+
+.container2 {
+    display: block;
+    text-align: left;
+    margin: 20px 0 0 260px;
+}
+
+.article {
+    display: flex;
+    margin-bottom: 40px;
+    max-width: 800px;
+    padding: 10px;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.article-body {
+    margin-left: 5px;
+    max-width: 500px;
+}
+
+.article a {
+    text-decoration: none;
+}
+
+.article-image {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.article:hover {
+    background-color: #e9f0f5;
+    
+}
+
+.side-header {
+    position: absolute;
+    overflow: hidden;
+    top: 250px;
+    right: 150px;
+    display: block;
+    border-radius: 10px;
+}
+.side-header a {
+    color: #eee;
+    text-decoration: none;
+    padding-right: 40px;
+    padding-left: 20px;
+}
+
+.side-header h2 a:hover {
+    text-decoration: underline;
+}
+
+.side-header h2 {
+    background-color: var(--sideColor);
+    padding: 10px;
+}
+
+.side-header li {
+    background-color: var(--mainColor);
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--mainColorLight);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.side-header li:hover {
+    background-color: var(--mainColorLighter);
+    cursor: pointer;
+    transform: scale(1.1);
+    font-weight: 500;
+}
+
+.container2 button {
+    margin-bottom: 40px;
+    width: 800px;
+    padding: 80px;
+    border-radius: 10px;
+    background-color: #e9f0f5;
+}
+.container2 button:hover {
+    background-color: #d0d2d4;
+    cursor: pointer;
+}
