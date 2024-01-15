@@ -23,6 +23,6 @@ Instructors:
 
 Admin credentials: 
 {
-  "username": "admin",
+  "username": "admin", or "username": "Mati"
   "password": "admin_password"
 }
