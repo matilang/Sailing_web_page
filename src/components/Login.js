@@ -36,7 +36,7 @@ function Login() {
         <div>
             <div className='log-background'>
                 <div className='log-box'>
-                    <h2>Login</h2>
+                    <h2>Logowanie</h2>
                     <form onSubmit={handleSubmit}>
                         <div>
                             <label htmlFor='username'>
@@ -44,7 +44,7 @@ function Login() {
                             </label>
                             <input
                               type='text'
-                              placeholder='Enter username'
+                              placeholder='Wpisz nazwę użytkownika'
                               autoComplete='off'
                               name='username'
                               className='inputbox'
@@ -53,11 +53,11 @@ function Login() {
                         </div>
                         <div>
                             <label htmlFor='password'>
-                                <strong>Password</strong>
+                                <strong>Hasło</strong>
                             </label>
                             <input
                               type='password'
-                              placeholder='Enter password'
+                              placeholder='Wpisz hasło'
                               autoComplete='off'
                               name='password'
                               className='inputbox'
@@ -65,7 +65,7 @@ function Login() {
                             />
                         </div>
                         <button className='btn-login'>
-                            Login
+                            Zaloguj
                         </button>
                     </form>
                 </div>
