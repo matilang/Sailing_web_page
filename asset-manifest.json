@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/sailing-webpage/static/css/main.30286725.css",
+    "main.js": "/sailing-webpage/static/js/main.cce1c7f6.js",
+    "static/media/motorboatArticle.jpg": "/sailing-webpage/static/media/motorboatArticle.0cc2098fde936bdf7fc1.jpg",
+    "static/media/baner_yacht.jpg": "/sailing-webpage/static/media/baner_yacht.85d615bcee24afc090e9.jpg",
+    "static/media/yachtArticle.jpg": "/sailing-webpage/static/media/yachtArticle.43984c9e0083ff55491e.jpg",
+    "static/media/pg-logotyp.svg": "/sailing-webpage/static/media/pg-logotyp.192c769755637034314198460d5c3b5c.svg",
+    "static/media/ZUF_logotyp.svg": "/sailing-webpage/static/media/ZUF_logotyp.c674c0b8f699afc6cc757fb348b64e2a.svg",
+    "static/media/male_icon.svg": "/sailing-webpage/static/media/male_icon.33ed196b3ba62b753d2c28c93a0e0e11.svg",
+    "index.html": "/sailing-webpage/index.html",
+    "main.30286725.css.map": "/sailing-webpage/static/css/main.30286725.css.map",
+    "main.cce1c7f6.js.map": "/sailing-webpage/static/js/main.cce1c7f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30286725.css",
+    "static/js/main.cce1c7f6.js"
+  ]
+}
