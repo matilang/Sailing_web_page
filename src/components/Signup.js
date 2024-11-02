@@ -25,15 +25,15 @@ function Signup() {
         <div>
             <div className='log-background'>
                 <div className='log-box'>
-                    <h2>Register</h2>
+                    <h2>Rejestracja</h2>
                     <form onSubmit={handleSubmit}>
                         <div>
                             <label htmlFor='username'>
-                                <strong>Name</strong>
+                                <strong>Nazwa użytkownika</strong>
                             </label>
                             <input
                               type='text'
-                              placeholder='Enter Username'
+                              placeholder='Wpisz nazwę użytkownika'
                               autoComplete='off'
                               name='username'
                               className='inputbox'
@@ -46,7 +46,7 @@ function Signup() {
                             </label>
                             <input
                               type='text'
-                              placeholder='Enter email'
+                              placeholder='Wpisz email'
                               autoComplete='off'
                               name='email'
                               className='inputbox'
@@ -55,11 +55,11 @@ function Signup() {
                         </div>
                         <div>
                             <label htmlFor='password'>
-                                <strong>Password</strong>
+                                <strong>Hasło</strong>
                             </label>
                             <input
                               type='password'
-                              placeholder='Enter password'
+                              placeholder='Wpisz hasło'
                               autoComplete='off'
                               name='password'
                               className='inputbox'
@@ -67,10 +67,10 @@ function Signup() {
                             />
                         </div>
                         <button type='submit' className='btn-register'>
-                            Register
+                            Zarejestruj się
                         </button>
                         </form>
-                        <p><a href='/login'>Already have an account?</a></p>
+                        <p><a href='/login'>Masz już konto?</a></p>
                         {/* <div className='btn-login'>
                             <Link to='login'>
                             Login

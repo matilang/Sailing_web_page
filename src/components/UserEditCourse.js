@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import './RegistrationForm.css'
 
-const RegistrationForm = () => {
+const UserEditCourse = () => {
 
   const courseId = localStorage.getItem('courseId')
   const navigate = useNavigate()
@@ -49,7 +49,7 @@ const RegistrationForm = () => {
 
   return (
     <div className='regist'>
-      <h2>Formularz Zapisu na Kurs Żeglarski Edycja</h2>
+      <h2>Formularz Zapisu na Kurs Żeglarski - Edycja</h2>
       <form onSubmit={handleSubmit}>
         <label>
           Imię:
@@ -189,4 +189,4 @@ const RegistrationForm = () => {
   );
 };
 
-export default RegistrationForm;
+export default UserEditCourse;

@@ -18,16 +18,6 @@ function Navbar() {
     })
     .catch(err => console.log(err))
   }
-  // const GetUserDetails = () => {
-  //   axios.get('/user/user-profile').then(response => {
-  //     console.log(response)
-  //     console.log(localStorage.getItem('islogged'))
-  //     console.log(localStorage.getItem('role'))
-  //     navigate('/');
-
-  //   })
-  //   .catch(err => console.log(err))
-  // }
   const isLogged = localStorage.getItem('islogged') === 'true';
   console.log(localStorage.getItem('islogged'))
 
