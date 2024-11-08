@@ -24,7 +24,6 @@ function Login() {
                     navigate('/');
                     localStorage.setItem('islogged','true')
                     localStorage.setItem('role', result.data.user.role)
-                    // localStorage.setItem('userID', result.data.user.userId)
                     console.log(localStorage.getItem('islogged'))
                     
             }

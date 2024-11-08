@@ -6,7 +6,7 @@ import './RegistrationForm.css'
 import TitleBar from './TitleBar';
 import SideHeader from './SideHeader';
 
-const RegistrationForm = () => {
+const EditUser = () => {
 
   const courseId = localStorage.getItem('courseId')
   const navigate = useNavigate()
@@ -83,4 +83,4 @@ const RegistrationForm = () => {
   );
 };
 
-export default RegistrationForm;
+export default EditUser;

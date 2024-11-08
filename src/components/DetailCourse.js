@@ -9,9 +9,6 @@ const DetailCourse = () => {
 
   const courseId = localStorage.getItem('courseId')
   const [course, setCourse] = useState([]);
-  const [crewmates, setcrewmates] = useState([]);
-  const isAdmin = localStorage.getItem('role') === 'admin';
-  const isInstructor = localStorage.getItem('role') === 'instructor';
   const pageTitle = 'Szczegóły';
     const pageLinks = [
       { text: 'Politechnika Gdańska', href: '/#', title: 'Wróć do poprzedniej strony' },
