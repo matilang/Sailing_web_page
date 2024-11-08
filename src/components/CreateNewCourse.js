@@ -42,7 +42,7 @@ const CreateCourseForm = () => {
   };
 
   return (
-    
+
     <div>
     <TitleBar mainTitle={pageTitle} pageLinks={pageLinks} />
     <div className='regist'>
@@ -92,8 +92,49 @@ const CreateCourseForm = () => {
       </div>
       <SideHeader/>
       </div>
-    
+
   );
 };
 
-export default CreateCourseForm;
+// export default CreateCourseForm;
+
+export function CourseLabel ({name, value, handleChange}) {
+  <label>
+  <input
+    type = 'text'
+    name = {name}
+    value = {value}
+    onChange = {handleChange}
+    />
+    </label>
+}
+
+export default function Course() {
+
+  <div>
+  <CourseLabel
+    name = 'name'
+    value = {formData.courseDurationDays}
+    onChange = {handleChange}
+    />
+    <CourseLabel
+    name = 'name'
+    value = {formData.courseDurationDays}
+    onChange = {handleChange}
+    />
+    <CourseLabel
+    name = 'name'
+    value = {formData.courseDurationDays}
+    onChange = {handleChange}
+    />
+    <CourseLabel
+    name = 'name'
+    value = {formData.courseDurationDays}
+    onChange = {handleChange}
+    />
+
+
+
+
+</div>
+  }
