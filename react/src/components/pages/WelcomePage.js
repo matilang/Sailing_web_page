@@ -7,6 +7,8 @@ import TitleBar from '../TitleBar'
 import SideHeader from '../SideHeader'
 import { useAuth } from '../AuthContext'
 import { Link } from 'react-router-dom'
+import {articles} from '../ArticleData.js';
+
 
 
 const Body = () => {
@@ -23,10 +25,12 @@ const Body = () => {
 
     return (
       <div>
-        <TitleBar mainTitle={pageTitle} pageLinks={pageLinks}/>
+        <TitleBar mainTitle={pageTitle} pageLinks={pageLinks} />
         <section className="main">
             <div className='container2'>
-                <Article/>
+                {articles.map(article => (
+                    <Article key={article.id} data={article} />
+                ))}
             </div>
             {/* <div className='container2'>
                 <Article
