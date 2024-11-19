@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 // const Article = ({ imageSrc, date, title, text, link }) => {
 //   return (
@@ -23,11 +24,13 @@ import React from 'react';
 
 // export default Article;
 
-export function Image ({image}) {
+export function Image ({image, link}) {
 
   return (
     <a title='artykuł'>
-      <img src={image} alt="" className='article-image'/>
+        <Link to='/fullarticle1'>
+          <img src={image} alt="" className='article-image'/>
+        </Link>
     </a>
   )
 }
@@ -40,7 +43,7 @@ export function ArticleText({date, content, title, link}) {
       <h2 className='article-title'>
         <a href={link}>{title}</a>
       </h2>
-      <p className='article-text'>{content}</p>
+      <p className='article-text' href={link}>{content}</p>
     </div>
   )
 }
