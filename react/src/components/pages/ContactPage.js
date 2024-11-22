@@ -18,7 +18,7 @@ const ContactPage = () => {
                     <ul>
                         <li><strong>adres:</strong> Al. Zwycięstwa 12 80-219 Gdańsk</li>
                         <li><strong>e-mail:</strong><a href='/#'>pgzagle@gmail.com</a></li>
-                        <li><strong>kom:</strong>609176750</li>
+                        <li><strong>telefon:</strong>609176750</li>
                         <li><strong>adres strony www:</strong>https://pg.edu.pl/zagle</li>
                         <li><strong><a href='/#'>strona 'Żagle PG Ahoooj!' na FB</a></strong></li>
                     </ul>

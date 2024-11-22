@@ -16,11 +16,11 @@
 }
 
 .container {
+    position: relative;
     background-color: var(--secondary);
     display: block;
     overflow: hidden;
     height: 450px;
-    /* z-index: 10; */
 }
 
 .footer-columns {
@@ -52,24 +52,10 @@
     line-height: 1.5;
 }
 
-.footer-col-links li:hover {
-    cursor: pointer;
-}
-
 .footer-col-links a {
     color: #eee;
     text-decoration: none;
 }
-
-.footer-col-links a:hover{
-    text-decoration: underline;
-}
-
-/* .logos {
-    position: relative;
-    bottom: 250px;
-    left: 450px;
-} */
 
 .pg-logo img {
     width: 100px;

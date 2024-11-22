@@ -18,9 +18,9 @@ export function ArticleText({date, content, title, link}) {
     <div className='article-body'>
       <p className='article-date'>{date}</p>
       <h2 className='article-title'>
-        <a href={link}>{title}</a>
+        <Link to={link}>{title}</Link>
       </h2>
-      <p className='article-text' href={link}>{content}</p>
+      <p className='article-text'>{content}</p>
     </div>
   )
 }

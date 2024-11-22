@@ -1,6 +1,3 @@
-import baner from '../../images/baner_yacht.jpg'
-import yacht from '../../images/yachtArticle.jpg'
-import motorboat from '../../images/motorboatArticle.jpg'
 import './WelcomePage.css'
 import Article from '../Article'
 import TitleBar from '../TitleBar'

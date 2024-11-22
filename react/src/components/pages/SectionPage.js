@@ -14,10 +14,10 @@ const SectionPage = () => {
             <TitleBar mainTitle={pageTitle} pageLinks={pageLinks}/>
             <div className='container1'>
                 <div className='text'>
-                    <p><h4>Misja</h4></p>
-                    <p>Misją Sekcji Żeglarskiej jest dzielenie się pasją, rozwój edukacji morskiej i podtrzymywanie tradycji żeglarskiej na nadmorskiej uczelni jaką jest Politechnika Gdańska.</p>
-                    <p><h4>Działalność</h4></p>
-                    <p>W ramach działalności Sekcji Żeglarskiej organizujemy:</p>
+                    <h4>Misja</h4>
+                    Misją Sekcji Żeglarskiej jest dzielenie się pasją, rozwój edukacji morskiej i podtrzymywanie tradycji żeglarskiej na nadmorskiej uczelni jaką jest Politechnika Gdańska.
+                    <h4>Działalność</h4>
+                    W ramach działalności Sekcji Żeglarskiej organizujemy:
                     <ul>
                         <li>Szkolenia na stopnie żeglarskie:
                             <ul>
@@ -31,8 +31,8 @@ const SectionPage = () => {
                         <li>Seminaria o tematyce żeglarskiej</li>
                         <li>Spotkania z pasjonatami żeglarstwa</li>
                     </ul>
-                    <p><h4>Żeglarstwo Regatowe</h4></p>
-                    <p>W zawodach sportowych Sekcja Żeglarska Politechniki Gdańskiej, dzięki wsparciu Rektora PG, jest reprezentowana przez regatowe załogi żeglarskie tworzące PG Racing. Więcej na stronach:</p>
+                    <h4>Żeglarstwo Regatowe</h4>
+                    W zawodach sportowych Sekcja Żeglarska Politechniki Gdańskiej, dzięki wsparciu Rektora PG, jest reprezentowana przez regatowe załogi żeglarskie tworzące PG Racing. Więcej na stronach:
                     <ul>
                         <li><a href='/#'>PG Racing Team</a></li>
                         <li><a href='/#'>Facebook PG Racing</a></li>

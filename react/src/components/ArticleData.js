@@ -1,6 +1,4 @@
-// ArticleData.js
 import yacht from '../images/baner_yacht.jpg';
-// import motor from '../images/baner_motor.png';
 
 export const articles = [
   {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const TitleBar = ({ mainTitle, pageLinks }) => {
   return (
@@ -10,9 +11,7 @@ const TitleBar = ({ mainTitle, pageLinks }) => {
               {pageLinks.map((link, index) => (
                 <React.Fragment key={index}>
                   <li className='pagelink'>
-                    <a href={link.href} title={link.title}>
-                      {link.text}
-                    </a>
+                    <Link to={link.href} title={link.title}>{link.text}</Link>
                   </li>
                   {index < pageLinks.length - 1 && <li className='separator'>/</li>}
                 </React.Fragment>

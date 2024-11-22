@@ -1,18 +1,45 @@
+import { Link } from 'react-router-dom';
 import yacht from '../images/baner_yacht.jpg';
 import './pages/SectionPage.css'
 import TitleBar from './TitleBar';
+import React from 'react';
 // import { useState } from 'react';
 // import RegistrationForm from './RegistrationForm';
 
 
-const FullArticle1 = () => {
+function generateArticleList(items) {
+    return items.map(item => <li>{item}</li>);
+}
+
+export default function FullArticle1() {
     // const [courseId, setCourseId] = useState('ID_kurs_żeglarski');
+
     const pageTitle = 'Aktulaności';
     const pageLinks = [
         { text: 'Politechnika Gdańska', href: '/#', title: 'Wróć do poprzedniej strony' },
         { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#', title: 'Obecna strona' },
         { text: 'Aktulaności', href: '/FullArticle1', title: 'Obecna strona' },
     ];
+
+    const courseDates = ['02.07-15.07', '16.07-29.07', '30.07-12.08', '13.08-26.08'];
+    const courseCosts = ['Studenci PG – 1200,- PLN', 'Inni spoza PG – 1600,- PLN'];
+    const priceIncludes = [
+        'szkolenie',
+        'zakwaterowanie na terenie ośrodka PG',
+        'pełne wyżywienie (3 posiłki dziennie)',
+        'wypożyczenie materiałów szkoleniowych',
+        'ubezpieczenie'
+    ];
+    const priceExcludes = [
+        'dojazdu',
+        'kosztów egzaminu i kosztów wydania patentu - 50% zniżki dla młodzieży uczącej się do 26 roku życia z ważną legitymacją'
+    ];
+    const rights = [
+        'prowadzenie jachtów żaglowych bez lub z pomocniczym napędem mechanicznym po wodach śródlądowych',
+        'prowadzenie jachtów żaglowych bez lub z pomocniczym napędem mechanicznym o długości całkowitej do 8,5 m po wodach morskich w strefie 2 Mm od brzegu w porze dziennej'
+    ];
+
+
     return(
         <div>
             <TitleBar mainTitle={pageTitle} pageLinks={pageLinks}/>
@@ -26,32 +53,23 @@ const FullArticle1 = () => {
                     </p>
                     <p><strong>Terminy: </strong></p>
                     <ul>
-                        <li>T1  - 02.07-15.07</li>
-                        <li>T2  - 16.07-29.07</li>
-                        <li>T3  - 30.07-12.08</li>
-                        <li>T4  - 13.08-26.08</li>
+                        {generateArticleList(courseDates)}
                     </ul>
                     <p><strong>Koszt: </strong></p>
                     <ul>
-                        <li>Studenci PG – 1200,- PLN</li>
-                        <li>Inni spoza PG – 1600,- PLN</li>
+                        {generateArticleList(courseCosts)}
                     </ul>
                     <p><strong>Cena obejmuje: </strong></p>
                     <ul>
-                        <li>szkolenie</li>
-                        <li>zakwaterowanie na terenie ośrodka PG</li>
-                        <li>pełne wyżywienie (3 posiłki dziennie)</li>
-                        <li>wypożyczenie materiałów szkoleniowych</li>
-                        <li>ubezpieczenie</li>
+                        {generateArticleList(priceIncludes)}
                     </ul>
                     <p><strong>Cena nie obejmuje: </strong></p>
                     <ul>
-                        <li>dojazdu</li>
-                        <li>kosztów egzaminu i kosztów wydania patentu - 50% zniżki dla młodzieży uczącej się do 26 roku życia z ważną legitymacją</li>
+                        {generateArticleList(priceExcludes)}
                     </ul>
                     <p><strong>ORGANIZATOR ZASTRZEGA SOBIE ODWOŁANIE KURSÓW W RAZIE BRAKU CHĘTNYCH DO SZKOLENIA.</strong></p>
                     <div className='sign-in'>
-                    <a href={`/allcourses`} className='sign-in-link'>Zapisy</a>
+                    <Link to='/allcourses'>Zapisy</Link>
                     </div>
                     <p><strong>Płatności: </strong></p>
                     <p>Płatność na konto PG:</p>
@@ -73,5 +91,3 @@ const FullArticle1 = () => {
         </div>
     );
 }
-
-export default FullArticle1;
