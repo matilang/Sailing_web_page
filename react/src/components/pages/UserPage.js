@@ -3,7 +3,7 @@ import axios from "axios";
 import TitleBar from "../TitleBar";
 import SideHeader from "../SideHeader";
 import { useNavigate } from "react-router-dom";
-import '../AllCourses.css'
+import '../../App.css'
 
 
 const UserPage = () => {
@@ -16,19 +16,19 @@ const UserPage = () => {
       { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#', title: 'Obecna strona' },
       { text: 'Moje Kursy', href: '/crew', title: 'Obecna strona' },
     ];
-  
+
     useEffect(() => {
       axios.get('/user/user-registration-forms')
         .then(response => setRegistrations(response.data))
         .catch(err => console.error(err));
     }, []);
-  
+
     useEffect(() => {
       const fetchDetailedCourses = async () => {
         const promises = registrations.map(registration =>
           axios.get(`/courses/${registration.courseId}`)
         );
-  
+
         try {
           const responses = await Promise.all(promises);
           const detailedCoursesData = responses.map(response => response.data);
@@ -37,10 +37,10 @@ const UserPage = () => {
           console.error('Error fetching detailed courses:', error);
         }
       };
-  
+
       fetchDetailedCourses();
     }, [registrations]);
-  
+
     const handleDeletefromCoures = (courseId) => {
       axios.put(`user/unregister/${courseId}`)
       .then(response => console.log(response))
@@ -52,7 +52,7 @@ const UserPage = () => {
           localStorage.setItem('courseId', courseId);
           navigate('/usereditpage')
         };
-  
+
     return (
       <div>
         <TitleBar mainTitle={pageTitle} pageLinks={pageLinks} />
@@ -90,6 +90,5 @@ const UserPage = () => {
       </div>
     );
   };
-  
+
   export default UserPage;
-  

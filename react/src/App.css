@@ -1,13 +1,34 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
 .App-link {
   color: #61dafb;
+} */
+
+.courses button {
+  padding: 8px;
+  border: 1px solid #000;
+  background-color: var(--mainColorLight);
+  color: #eee;
+  margin-right: 10px;
+  border-radius: 10px;
 }
 
+.courses button:hover {
+  cursor: pointer;
+  background-color: var(--mainColor);
+}
+
+.courses li{
+  padding-bottom: 20px;
+}
+
+.courses ul {
+  list-style: none;
+}

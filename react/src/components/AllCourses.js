@@ -1,7 +1,7 @@
 import React, { useState} from 'react';
 import axios from 'axios';
 import {useNavigate } from 'react-router-dom';
-import './AllCourses.css'
+import '../App.css'
 import TitleBar from './TitleBar';
 import SideHeader from './SideHeader';
 
