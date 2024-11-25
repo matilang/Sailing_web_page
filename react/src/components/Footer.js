@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css'
+import '../App.css'
 import PG_logo from '../images/pg-logotyp.svg'
 import F_logo from '../images/ZUF_logotyp.svg'
 import { Link } from 'react-router-dom';
@@ -36,7 +36,7 @@ export default function Footer() {
 
 
     return (
-        <div className='container'>
+        <div className='footer-container'>
             <div className='footer-columns'>
                 {columns.map((column, index) => (
                     <FooterColumn key={index} title={column.title} links={column.links} />
@@ -45,12 +45,14 @@ export default function Footer() {
             <div className='logos'  style={logoStyle}>
                 <Link to='/#' alt='logo-PG'>
                     <img src={PG_logo}
-                        style={{ width: '100px',
+                         alt=''
+                         style={{ width: '100px',
                                  paddingRight: '20px' }} />
                 </Link>
                 <Link to='/#' alt='logo-PG'>
                     <img src={F_logo}
-                        style={{ width: '200px',
+                         alt=''
+                         style={{ width: '200px',
                                  paddingLeft: '20px',
                                  borderLeft: "1px solid #eee" }} />
                 </Link>

@@ -29,7 +29,7 @@ function Navbar() {
       <div className='logo-bar'>
         <div className='site-logo'>
           <Link to='/#'>
-          <img src={logo}></img>
+          <img src={logo} alt=''></img>
           </Link>
         </div>
       </div>
@@ -41,7 +41,7 @@ function Navbar() {
             </button>
         ) : (
           <button className='btn'>
-              <Link to='/singup'>Zaloguj się</Link>
+              <Link to='/signup'>Zaloguj się</Link>
             </button>
         )}
             <div id='side-nav'>

@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const SideHeader = () => {
+export default function SideHeader() {
 
     const isLogged = localStorage.getItem('islogged') === 'true';
 
@@ -8,20 +9,20 @@ const SideHeader = () => {
 
         <div className='side-header'>
             <div className='main-header'>
-                    <h2><a href='/#'>Sekcja Żeglarska PG</a></h2>
+                    <h2><Link to='/#'>Sekcja Żeglarska PG</Link></h2>
             </div>
             <ul className='downpage-list'>
-                <li><a href='/section'>Sekcja</a></li>
-                <li><a href='/crew'>Załoga</a></li>
-                <li><a href='/partner'>Partnerzy</a></li>
-                <li><a href='/calendar'>FAQ</a></li>
-                <li><a href="/allcourses">Wszystkie Kursy</a></li>
-                {isLogged && <li><a href="/userpage">Moje Kursy</a></li>}
-                {isLogged && <li><a href="/edituserpage">Edytuj Dane Użytkownika</a></li>}
-                <li className="last"><a href='/contact'>Kontakt</a></li>
+                <li><Link to='/section'>Sekcja</Link></li>
+                <li><Link to='/crew'>Załoga</Link></li>
+                <li><Link to='/partner'>Partnerzy</Link></li>
+                <li><Link to='/calendar'>FAQ</Link></li>
+                <li><Link to="/allcourses">Wszystkie Kursy</Link></li>
+                {isLogged && <li><Link to="/userpage">Moje Kursy</Link></li>}
+                {isLogged && <li><Link to="/edituserpage">Edytuj Dane Użytkownika</Link></li>}
+                <li className="last"><Link to='/contact'>Kontakt</Link></li>
             </ul>
         </div>
     );
 }
 
-export default SideHeader;
+

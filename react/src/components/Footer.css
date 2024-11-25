@@ -15,7 +15,7 @@
     --white: #e4f1fe;
 }
 
-.container {
+.footer-container {
     position: relative;
     background-color: var(--secondary);
     display: block;
