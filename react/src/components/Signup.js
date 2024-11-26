@@ -1,7 +1,7 @@
 import { useState } from 'react'
 // import Footer from './Footer'
 import './Signup.css'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
@@ -70,12 +70,7 @@ function Signup() {
                             Zarejestruj się
                         </button>
                         </form>
-                        <p><a href='/login'>Masz już konto?</a></p>
-                        {/* <div className='btn-login'>
-                            <Link to='login'>
-                            Login
-                            </Link>
-                        </div> */}
+                        <p><Link  to='/login'>Masz już konto?</Link></p>
                 </div>
             </div>
         </div>
