@@ -28,9 +28,7 @@ const Body = () => {
                 {articles.map(article => (
                     <Article key={article.id} data={article} />
                 ))}
-            </div>
-            <div className='container2'>
-                {isAdmin && <Link to='/createcourseform'><button>+</button></Link>}
+            {isAdmin && <Link to='/createcourseform'><button font color='white'>+</button></Link>}
             </div>
             <SideHeader/>
         </section>
