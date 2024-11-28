@@ -6,14 +6,19 @@
 }
 
 :root {
-  --mainColor: #043865;
-  --mainColorLight: #043865;
-  --secondaryColor: #db2b39;
-  --textColor: #eee;
+	--mainColor: #043865;
+	--mainColorLight: #043865;
+  --mainColorLighter: #084982;
+	--secondaryColor: #db2b39;
+	--textColor: #eee;
   --secondary: #052f52;
-  --sideColor: #072138;
-  --white: #e4f1fe;
+	--sideColor: #072138;
+	--white: #e4f1fe;
 }
+
+/* ---------------------------------------------------------------------------------- */
+/* ----------------------------------FOOTER------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
 
 .footer-container {
   position: relative;
@@ -68,6 +73,11 @@
   border-left: 1px solid #eee;
 }
 
+/* ---------------------------------------------------------------------------------- */
+/* ----------------------------------ALL COURSES------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+
+
 .courses button {
   padding: 8px;
   border: 1px solid #000;
@@ -88,4 +98,507 @@
 
 .courses ul {
   list-style: none;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* ------------------------------------NAVBAR---------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 110px;
+	/* padding: 0 100px; */
+	background-color: var(--secondary);
+	color: var(--white);
+}
+
+header div,nav {
+	display: flex;
+	align-items: left;
+}
+
+.logo-bar {
+	display: flex;
+	/* align-items: center; */
+	height: 98%;
+  }
+
+  .site-logo img {
+	max-height: 80%;
+	object-fit: contain;
+	padding-left: 150px;
+	padding-top: 15px;
+	padding-right: 15px;
+ }
+
+.main-bar {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+
+}
+
+.main-bar ul {
+	list-style: none;
+	display: flex;
+	width: 100%;
+}
+
+.side-nav {
+    background-color: var(--sideColor);
+    width: 80%;
+    height: 100%;
+}
+
+.side-nav li {
+	background-color: var(--sideColor);
+	height: 100%;
+	font-size: 0.875rem;
+	font-weight: 500;
+	padding: 8px 16px;
+	display: inline-block;
+}
+
+.main-nav {
+	padding: auto;
+	width: 100%;
+}
+
+.main-nav ul {
+	list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.main-nav a {
+	display: block;
+}
+
+.main-nav li {
+	position: relative;
+	float: left;
+	background-color: var(--secondary);
+	/* height: 100%; */
+	font-size: 1.25rem;
+	font-weight: 700;
+	padding: 21.5px;
+	line-height: 1.5;
+}
+
+.main-nav .list-styled {
+	list-style: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	background-color: var(--secondary);
+	padding: 0;
+	font-size: 1rem;
+	font-weight: 400;
+	transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    max-height: 0;
+  	overflow: hidden;
+  	border-bottom-left-radius: 10px;
+  	border-bottom-right-radius: 10px;
+	z-index: 1;
+}
+
+.main-nav .list-styled li {
+	background-color: var(--secondary);
+	padding: 20px;
+	border-bottom: 1px solid var(--mainColorLight); /* Dodano linie oddzielającą elementy listy */
+	font-size: 0.875rem;
+	font-weight: 200;
+	width: 100%;
+	transition: background-color 0.25s ease-in-out, transform 0.25s ease-in-out;
+	text-align: center;
+	line-height: 1.5;
+}
+
+
+.main-nav li:hover .list-styled{
+	opacity: 1;
+	visibility: visible;
+	cursor: pointer;
+	display: block;
+	max-height: 320px;
+	/* transition-delay: 0.1s; */
+}
+
+.main-nav li:not(:hover) .list-styled {
+	/* transition-delay: 0.5s; */
+	max-height: 0;
+	overflow: hidden;
+  }
+
+.main-nav li:hover {
+	cursor: pointer;
+}
+
+.main-nav .list-styled li:hover {
+	background-color: var(--mainColor);
+	cursor: pointer;
+	font-size: 1.1rem;
+	font-weight: 500;
+	transform: scale(1.1);
+}
+.side-nav li:hover {
+	background-color: var(--mainColor);
+	cursor: pointer;
+}
+
+.main-nav li:hover {
+	background-color: var(--mainColor);
+}
+
+nav a {
+	padding: 0 2rem;
+	color: var(--textColor);
+	text-decoration: none;
+}
+
+.btn {
+	position: absolute;
+	right: 20px;
+	top: 50px;
+	padding: auto;
+	border-radius: 10px;
+	font-size: 1rem;
+	line-height: 1.5;
+	padding: 0px 10px;
+	border: 5px solid var(--sideColor);
+}
+
+.btn a {
+	text-decoration: none;
+	color: var(--sideColor);
+}
+
+.btn:hover {
+	cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* ----------------------------------------FAQ--------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+
+.faq {
+  border-bottom: 2px solid #000;
+  cursor: pointer;
+  max-width: 700px;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-bottom: 20px; */
+}
+
+.answer {
+  padding-bottom: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.faq.active .answer {
+  max-height: 300px;
+}
+
+.faq.active svg {
+  transform: rotate(90deg);
+}
+
+.faq svg {
+  transition: transform 0.5s ease;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* -------------------------------------SINGUP--------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+
+.log-background {
+  background-color: var(--mainColorLight);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.log-box {
+  background-color: #ffffff;
+  padding: 80px;
+  border-radius: 8px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+.log-box h2 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+.inputbox {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+.btn-register {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 20px 0 20px 0;
+  width: 100%;
+}
+
+.btn-register:hover {
+  background-color: #45a049;
+}
+
+.btn-login {
+  background-color: #008CBA;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-login:hover {
+  background-color: #0073a8;
+}
+
+/* a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+p a:hover {
+  text-decoration: underline;
+} */
+
+/* ---------------------------------------------------------------------------------- */
+/* --------------------------------SECTION PAGE-------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+
+.text {
+  display: block;
+  text-align: left;
+  margin: 20px 0 40px 260px;
+  min-height: 430px;
+  line-height: 2;
+}
+
+.text ul li ul {
+  padding-left: 50px;
+}
+
+.text ul {
+  padding-left: 40px;
+}
+
+.article-dates {
+  font-size: 0.875rem;
+  color: #587689;
+  text-align: left;
+  margin-left: 260px;
+}
+
+.article-titles {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.sign-in a {
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  background-color: #db2b39;
+  color: #eee;
+  font-weight: 600;
+  margin-left: 150px;
+}
+.sign-in:hover {
+  cursor: pointer;
+}
+
+.article-images {
+  margin: 40px 0 40px 260px;
+}
+
+.tile {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  width: 40%;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.tile img {
+  max-width: 60px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+
+.text-text {
+  display: flex;
+  flex-wrap: wrap;
+  /* display: block; */
+  text-align: center;
+  margin: 20px 0 40px 260px;
+  min-height: 300px;
+  line-height: 2;
+}
+
+.container12 {
+  max-width: 900px;
+}
+
+.container12 h3 {
+  margin-right: 200px;
+}
+
+.tile:hover {
+  background-color: #e9f0f5;
+  cursor: pointer;
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+/* -------------------------------WELCOME PAGE--------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+
+.title-bar {
+  background-color: #e9f0f5;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.container1 {
+  max-width: 900px;
+}
+.backtrace {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 10px;
+  left: 260px;
+}
+
+.pages {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.pages a {
+  text-decoration: none;
+}
+
+.separator {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.title-block {
+  font-size: 3rem;
+  text-align: left;
+}
+
+.article {
+  display: flex;
+  margin-bottom: 40px;
+  max-width: 800px;
+  padding: 10px;
+  transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+  border-radius: 10px;
+}
+
+.article-body {
+  margin-left: 5px;
+  max-width: 500px;
+}
+
+.article a {
+  text-decoration: none;
+}
+
+.article-image {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.article:hover {
+  background-color: #e9f0f5;
+
+}
+
+.side-header {
+  position: absolute;
+  overflow: hidden;
+  top: 250px;
+  right: 150px;
+  display: block;
+  border-radius: 10px;
+}
+.side-header a {
+  color: #eee;
+  text-decoration: none;
+  padding-right: 40px;
+  padding-left: 20px;
+}
+
+.side-header h2 a:hover {
+  text-decoration: underline;
+}
+
+.side-header h2 {
+  background-color: var(--sideColor);
+  padding: 10px;
+}
+
+.side-header li {
+  background-color: var(--mainColor);
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--mainColorLight);
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.side-header li:hover {
+  background-color: var(--mainColorLighter);
+  cursor: pointer;
+  transform: scale(1.1);
+  font-weight: 500;
+}
+
+.container2 {
+  display: block;
+  text-align: left;
+  margin: 20px 0 0 260px;
+}
+
+.container2 button {
+  margin-bottom: 40px;
+  width: 800px;
+  padding: 80px;
+  border-radius: 10px;
+  background-color: var(--sideColor);
+  font-size: 2rem;
+}
+.container2 button:hover {
+  background-color: var(--mainColor);
+  cursor: pointer;
 }

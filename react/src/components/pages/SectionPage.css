@@ -69,14 +69,14 @@
     border-radius: 10px;
   }
 
-  .tile img {
+.tile img {
     max-width: 60px;
     height: auto;
     border-radius: 50%;
     border: 2px solid #000;
   }
 
-  .text-text {
+.text-text {
     display: flex;
     flex-wrap: wrap;
     /* display: block; */
@@ -86,15 +86,15 @@
     line-height: 2;
   }
 
-  .container12 {
+.container12 {
     max-width: 900px;
   }
 
-  .container12 h3 {
+.container12 h3 {
     margin-right: 200px;
   }
 
-  .tile:hover {
+.tile:hover {
     background-color: #e9f0f5;
     cursor: pointer;
   }

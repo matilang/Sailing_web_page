@@ -34,7 +34,7 @@
     margin-bottom: 10px;
     font-size: 2.5rem;
 }
-  .inputbox {
+.inputbox {
     width: 100%;
     padding: 8px;
     margin: 8px 0;
@@ -48,7 +48,7 @@ a {
 p a:hover {
     text-decoration: underline;
 }
-  
+
 .btn-register {
     background-color: #4caf50;
     color: white;
@@ -59,11 +59,11 @@ p a:hover {
     margin: 20px 0 20px 0;
     width: 100%;
 }
-  
-  .btn-register:hover {
+
+.btn-register:hover {
     background-color: #45a049;
 }
-  
+
 .btn-login {
     background-color: #008CBA;
     color: white;
@@ -74,7 +74,7 @@ p a:hover {
     cursor: pointer;
     width: 100%;
 }
-  
+
   .btn-login:hover {
     background-color: #0073a8;
-}  
+}
