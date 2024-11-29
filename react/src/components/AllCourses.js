@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState, useEffect} from 'react';
 import axios from 'axios';
 import {useNavigate } from 'react-router-dom';
 import '../App.css'
@@ -7,6 +7,8 @@ import SideHeader from './SideHeader';
 
 const AllCourses = () => {
   const [courses, setCourses] = useState([]);
+  const [loading, setLoading] = useState(true); // State to manage loading
+  const [error, setError] = useState(null); // State to handle errors
   const isAdmin = localStorage.getItem('role') === 'admin';
   const navigate = useNavigate();
   const pageTitle = 'Wszystkie Kursy';
@@ -43,9 +45,19 @@ const AllCourses = () => {
     navigate(`/archiviseform`);
   };
 
+  useEffect(() => {
     axios.get('/courses')
-      .then(response => setCourses(response.data))
-      .catch(error => console.error('Error fetching courses:', error));
+      .then(response => {
+        console.log('API Response:', response.data);
+        setCourses(response.data); // Update courses state with data
+        setLoading(false); // Set loading to false
+      })
+      .catch(error => {
+        console.error('Error fetching courses:', error);
+        setError('Failed to load courses. Please try again later.');
+        setLoading(false); // Set loading to false
+      });
+  }, []);
 
 
   return (
