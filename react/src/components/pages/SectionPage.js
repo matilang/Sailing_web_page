@@ -1,8 +1,9 @@
 import './SectionPage.css'
 import SideHeader from '../SideHeader';
 import TitleBar from '../TitleBar';
+import { Link } from 'react-router-dom'
 
-const SectionPage = () => {
+export default function SectionPage() {
     const pageTitle = 'Sekcja';
     const pageLinks = [
         { text: 'Politechnika Gdańska', href: '/#', title: 'Wróć do poprzedniej strony' },
@@ -34,8 +35,8 @@ const SectionPage = () => {
                     <h4>Żeglarstwo Regatowe</h4>
                     W zawodach sportowych Sekcja Żeglarska Politechniki Gdańskiej, dzięki wsparciu Rektora PG, jest reprezentowana przez regatowe załogi żeglarskie tworzące PG Racing. Więcej na stronach:
                     <ul>
-                        <li><a href='/#'>PG Racing Team</a></li>
-                        <li><a href='/#'>Facebook PG Racing</a></li>
+                        <li><Link to='/#'>PG Racing Team</Link></li>
+                        <li><Link to='/#'>Facebook PG Racing</Link></li>
                     </ul>
                 </div>
             </div>
@@ -43,4 +44,3 @@ const SectionPage = () => {
         </div>
     );
 }
-export default SectionPage;
