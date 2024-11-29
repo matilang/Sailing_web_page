@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 export default function SideHeader() {
 
     const isLogged = localStorage.getItem('islogged') === 'true';
+    const isAdmin = localStorage.getItem('role') === 'admin';
+    const isInstructor = localStorage.getItem('role') === 'instructor';
 
     return (
 
@@ -17,6 +19,7 @@ export default function SideHeader() {
                 <li><Link to='/partner'>Partnerzy</Link></li>
                 <li><Link to='/calendar'>FAQ</Link></li>
                 <li><Link to="/allcourses">Wszystkie Kursy</Link></li>
+                {isLogged && isAdmin && <li><Link to="/createnewcourse">Stwórz Nowy Kurs</Link></li>}
                 {isLogged && <li><Link to="/userpage">Moje Kursy</Link></li>}
                 {isLogged && <li><Link to="/edituserpage">Edytuj Dane Użytkownika</Link></li>}
                 <li className="last"><Link to='/contact'>Kontakt</Link></li>
