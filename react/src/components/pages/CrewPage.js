@@ -1,4 +1,4 @@
-import './SectionPage.css'
+import '../../App.js'
 import SideHeader from '../SideHeader';
 import TitleBar from '../TitleBar';
 import { pageLinks, pageTitle, instructorsData, racingTeamData } from './CrewPageData';

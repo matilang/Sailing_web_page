@@ -1,4 +1,4 @@
-import './SectionPage.css'
+import '../../App.js'
 import SideHeader from '../SideHeader';
 import TitleBar from '../TitleBar';
 import { Link } from 'react-router-dom'
