@@ -1,4 +1,4 @@
-import './SectionPage.css'
+import '../../App.css'
 import SideHeader from '../SideHeader';
 import TitleBar from '../TitleBar';
 

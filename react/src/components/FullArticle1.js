@@ -1,11 +1,8 @@
 import { Link } from 'react-router-dom';
 import yacht from '../images/baner_yacht.jpg';
-import './pages/SectionPage.css'
+import '../App.css'
 import TitleBar from './TitleBar';
 import React from 'react';
-// import { useState } from 'react';
-// import RegistrationForm from './RegistrationForm';
-
 
 function generateArticleList(items) {
     return items.map(item => <li>{item}</li>);
