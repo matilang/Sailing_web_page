@@ -595,7 +595,7 @@ p a:hover {
   width: 800px;
   padding: 80px;
   border-radius: 10px;
-  background-color: var(--sideColor);
+  background-color: var(--mainColorLight);
   font-size: 2rem;
 }
 .container2 button:hover {

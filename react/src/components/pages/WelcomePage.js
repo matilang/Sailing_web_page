@@ -1,4 +1,4 @@
-import './WelcomePage.css'
+import '../../App.css'
 import Article from '../Article'
 import TitleBar from '../TitleBar'
 import SideHeader from '../SideHeader'

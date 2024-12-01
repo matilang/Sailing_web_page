@@ -80,7 +80,7 @@ const CreateCourseForm = () => {
 
         <label>
             Data:
-            <input type="text" name="dates" value={formData.dates} onChange={handleChange} required />
+            <input type="date" name="dates" value={formData.dates} onChange={handleChange} required />
         </label>
 
         <label>

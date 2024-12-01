@@ -1,14 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-export function Image ({image, link}) {
+export function Image ({image}) {
 
   return (
-    <a title='artykuł'>
+    <p title='artykuł'>
         <Link to='/fullarticle1'>
           <img src={image} alt="" className='article-image'/>
         </Link>
-    </a>
+    </p>
   )
 }
 
