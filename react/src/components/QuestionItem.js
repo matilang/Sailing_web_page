@@ -1,5 +1,5 @@
 import React from 'react';
-import './QuestionItem.css'
+import '../App.css'
 
 const QuestionItem = ({ question, answer, isActive, onToggleActive }) => {
   return (
