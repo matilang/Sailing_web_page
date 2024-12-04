@@ -15,6 +15,7 @@ function Navbar() {
       localStorage.setItem('islogged', false)
       localStorage.setItem('role','student')
       navigate('/');
+      window.location.reload();
 
     })
     .catch(err => console.log(err))

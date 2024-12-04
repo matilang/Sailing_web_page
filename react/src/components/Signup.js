@@ -1,6 +1,6 @@
 import { useState } from 'react'
 // import Footer from './Footer'
-import './Signup.css'
+import '../App.css'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'

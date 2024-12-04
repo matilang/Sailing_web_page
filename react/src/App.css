@@ -595,10 +595,53 @@ p a:hover {
   width: 800px;
   padding: 80px;
   border-radius: 10px;
-  background-color: var(--sideColor);
+  background-color: var(--mainColorLight);
   font-size: 2rem;
 }
 .container2 button:hover {
   background-color: var(--mainColor);
   cursor: pointer;
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+/* -------------------------------REGISTRATION FORM---------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+
+
+.regist h1 {
+  text-align: center;
+  color: #043865;
+}
+
+.regist form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 450px;
+}
+
+.regist  label {
+  margin-bottom: 10px;
+}
+
+.regist input {
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+.regist button {
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #043865;
+  color: #fff;
+  cursor: pointer;
+  border: 10px;
+  display: block;
+  position: center;
+}
+
+.regist button:hover {
+  background-color: #052f52;
 }
