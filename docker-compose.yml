@@ -1,16 +1,12 @@
-version: "3"
 services:
-  server:
-    build: /server
-    container_name: server_c
-    ports:
-      - '3000:3000'
-    volumes:
-      - ./node_modules
   react:
+    image: matilan/react
     build: ./react
-    container_name: react_c
     ports:
-      - '3000:3000'
-    stdin_open: true
-    tty: true
+      - "3001:3000"
+  node_server:
+    image: matilan/node
+    build: 
+      context: /server
+    ports:
+      - "3000:3000"
