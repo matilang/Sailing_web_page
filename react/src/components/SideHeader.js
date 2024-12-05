@@ -19,6 +19,7 @@ export default function SideHeader() {
                 <li><Link to='/partner'>Partnerzy</Link></li>
                 <li><Link to='/calendar'>FAQ</Link></li>
                 <li><Link to="/allcourses">Wszystkie Kursy</Link></li>
+                <li><Link to="/registrationform">Rejestracja</Link></li>
                 {isLogged && isAdmin && <li><Link to="/createnewcourse">Stwórz Nowy Kurs</Link></li>}
                 {isLogged && <li><Link to="/userpage">Moje Kursy</Link></li>}
                 {isLogged && <li><Link to="/edituserpage">Edytuj Dane Użytkownika</Link></li>}

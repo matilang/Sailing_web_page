@@ -14,6 +14,7 @@
   --secondary: #052f52;
 	--sideColor: #072138;
 	--white: #e4f1fe;
+  --black: #000;
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -609,9 +610,12 @@ p a:hover {
 /* ---------------------------------------------------------------------------------- */
 
 
-.regist h1 {
+.regist h2 {
   text-align: center;
-  color: #043865;
+  color: var(--black);
+  padding-top: 10px;
+  padding-bottom: 40px;
+  font-size: 3rem;
 }
 
 .regist form {
@@ -624,6 +628,8 @@ p a:hover {
 
 .regist  label {
   margin-bottom: 10px;
+  font-style: bold;
+  font-size: 1.2rem;
 }
 
 .regist input {

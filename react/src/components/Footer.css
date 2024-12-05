@@ -20,7 +20,8 @@
     background-color: var(--secondary);
     display: block;
     overflow: hidden;
-    height: 450px;
+    min-height: 300px;
+    padding-bottom: 0px;
 }
 
 .footer-columns {

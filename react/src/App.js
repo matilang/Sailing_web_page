@@ -32,27 +32,27 @@ function App() {
       <Router>
         <React.Fragment>
           <Navbar/>
-          <Routes>
-            <Route path="/" element={<WelcomePage/ >} />
-            <Route path='/section' element={<SectionPage />} />
-            <Route path='/crew' element={<CrewPage />} />
-            <Route path='/partner' element={<PartnerPage />} />
-            <Route path='/calendar' element={<CalendarPage />} />
-            <Route path='/contact' element={<ContactPage />} />
-            <Route path='/fullarticle1' element={<FullArticle1 />} />
-            <Route path='/signup' element={<Signup />} />
-            <Route path='/login' element={<Login />} />
-            <Route path='/registrationform' element={<RegistrationForm/>} />
-            <Route path='/userpage' element={<UserPage />} />
-            <Route path='/createcourseform' element={<CreateCourseForm/>} />
-            <Route path='/allcourses' element={<AllCourses/>} />
-            <Route path='/detailcourse' element={<DetailCourse/>} />
-            <Route path='/editcourseform' element={<EditCourseForm/>} />
-            <Route path='/archiviseform' element={<ArchiviseForm/>} />
-            <Route path='/newformtemplate' element={<NewFormTemplate/>} />
-            <Route path='/edituserpage' element={<EditUser/>} />
-            <Route path='/usereditpage' element={<UserEditPage/>} />
-          </Routes>
+            <Routes>
+              <Route path="/" element={<WelcomePage/ >} />
+              <Route path='/section' element={<SectionPage />} />
+              <Route path='/crew' element={<CrewPage />} />
+              <Route path='/partner' element={<PartnerPage />} />
+              <Route path='/calendar' element={<CalendarPage />} />
+              <Route path='/contact' element={<ContactPage />} />
+              <Route path='/fullarticle1' element={<FullArticle1 />} />
+              <Route path='/signup' element={<Signup />} />
+              <Route path='/login' element={<Login />} />
+              <Route path='/registrationform' element={<RegistrationForm/>} />
+              <Route path='/userpage' element={<UserPage />} />
+              <Route path='/createcourseform' element={<CreateCourseForm/>} />
+              <Route path='/allcourses' element={<AllCourses/>} />
+              <Route path='/detailcourse' element={<DetailCourse/>} />
+              <Route path='/editcourseform' element={<EditCourseForm/>} />
+              <Route path='/archiviseform' element={<ArchiviseForm/>} />
+              <Route path='/newformtemplate' element={<NewFormTemplate/>} />
+              <Route path='/edituserpage' element={<EditUser/>} />
+              <Route path='/usereditpage' element={<UserEditPage/>} />
+            </Routes>
           <Footer/>
         </React.Fragment>
       </Router>

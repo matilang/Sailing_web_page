@@ -1,4 +1,3 @@
-// import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
@@ -73,7 +72,6 @@ const RegistrationForm = () => {
             autoComplete='off'
           />
         </label>
-        <br />
         <label>
           Nazwisko:
           <input
@@ -84,7 +82,6 @@ const RegistrationForm = () => {
             autoComplete='off'
           />
         </label>
-        <br />
         <label>
           PESEL:
           <input
@@ -95,7 +92,6 @@ const RegistrationForm = () => {
             autoComplete='off'
           />
         </label>
-        <br />
         <label>
           Numer telefonu:
           <input
@@ -106,7 +102,6 @@ const RegistrationForm = () => {
             autoComplete='off'
           />
         </label>
-        <br />
         <label>
           Koszt kursu:
           <input
@@ -117,7 +112,6 @@ const RegistrationForm = () => {
             autoComplete='off'
           />
         </label>
-        <br />
         <label>
           Data rozpoczęcia:
           <input
@@ -128,7 +122,6 @@ const RegistrationForm = () => {
             autoComplete='off'
           />
         </label>
-        <br />
         <label>
           Email:
           <input
@@ -139,7 +132,6 @@ const RegistrationForm = () => {
             autoComplete='off'
           />
         </label>
-        <br />
         <label>
           Numer legitymacji studenckiej:
           <input
@@ -150,7 +142,6 @@ const RegistrationForm = () => {
             autoComplete='off'
           />
         </label>
-        <br />
         <label>
           Numer karty członkowskiej AZS PG:
           <input
@@ -161,7 +152,6 @@ const RegistrationForm = () => {
             autoComplete='off'
           />
         </label>
-        <br />
         <label>
           Rozmiar koszulki:
           <input
@@ -172,7 +162,6 @@ const RegistrationForm = () => {
             autoComplete='off'
           />
         </label>
-        <br />
         <label>
           Posiłki:
           <input
@@ -183,7 +172,6 @@ const RegistrationForm = () => {
             autoComplete='off'
           />
         </label>
-        <br />
         <label>
           Źródło polecające:
           <input
