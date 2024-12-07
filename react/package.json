@@ -21,15 +21,15 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set PORT=3001 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "proxy": "http://localhost:3000",
+    "proxy": "http://node_server:3000",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "proxy": "http://localhost:3000",
+  "proxy": "http://node_server:3000",
   "eslintConfig": {
     "extends": [
       "react-app",
