@@ -12,10 +12,10 @@ const ArchiviseForm = () => {
   const [courses, setCourses] = useState([]);
   const pageTitle = 'Archiwium';
   const pageLinks = [
-      { text: 'Politechnika Gdańska', href: '/#', title: 'Wróć do poprzedniej strony' },
-      { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#', title: 'Wróć do poprzedniej strony' },
-      { text: 'Wszystkie kursy', href: '/allcourses', title: 'Wróć do poprzedniej strony'},
-      { text: 'Archiwizacja', href: '/archiviseform', title: 'Obecna strona' },
+      { text: 'Politechnika Gdańska', href: '/#'},
+      { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#'},
+      { text: 'Wszystkie kursy', href: '/allcourses'},
+      { text: 'Archiwizacja', href: '/archiviseform'},
     ];
 
     useEffect(() => {
@@ -29,9 +29,9 @@ const ArchiviseForm = () => {
           setLoading(false);
         });
     }, []);
-  
+
     const archivedCourses = courses.filter(course => course.isArchived === true);
-  
+
     if (loading) return <p>Loading courses...</p>;
     if (error) return <p>{error}</p>;
 
@@ -43,7 +43,7 @@ const ArchiviseForm = () => {
       <h3>Zarchiwizowane kursy</h3>
       <div className='course-list'>
           {archivedCourses.map(course => (
-            <Course 
+            <Course
               key={course._id}
               course={course}
               isAdmin={isAdmin}

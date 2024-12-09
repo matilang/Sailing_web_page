@@ -9,13 +9,12 @@ function generateArticleList(items) {
 }
 
 export default function FullArticle1() {
-    // const [courseId, setCourseId] = useState('ID_kurs_żeglarski');
 
     const pageTitle = 'Aktulaności';
     const pageLinks = [
-        { text: 'Politechnika Gdańska', href: '/#', title: 'Wróć do poprzedniej strony' },
-        { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#', title: 'Obecna strona' },
-        { text: 'Aktulaności', href: '/FullArticle1', title: 'Obecna strona' },
+        { text: 'Politechnika Gdańska', href: '/#'},
+        { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#'},
+        { text: 'Aktulaności', href: '/FullArticle1'},
     ];
 
     const courseDates = ['02.07-15.07', '16.07-29.07', '30.07-12.08', '13.08-26.08'];

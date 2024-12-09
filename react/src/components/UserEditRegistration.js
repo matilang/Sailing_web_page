@@ -32,7 +32,6 @@ const UserEditCourse = () => {
     referringSource: '',
   });
 
-  // Pobierz szczegóły kursu i inicjalizuj formData
   useEffect(() => {
     axios
       .get(`/courses/${courseId}`)
@@ -40,7 +39,6 @@ const UserEditCourse = () => {
         const courseData = response.data;
         setCourse(courseData);
 
-        // Tworzymy lokalną zmienną dla formData
         const initialFormData = {
           firstName: '',
           lastName: '',
@@ -56,12 +54,10 @@ const UserEditCourse = () => {
           referringSource: '',
         };
 
-        // Dodaj dynamiczne pola z szablonu
         courseData.registrationFormTemplate?.fields?.forEach((field) => {
-          initialFormData[field.fieldName] = ''; // Inicjalizujemy dynamiczne pola
+          initialFormData[field.fieldName] = '';
         });
 
-        // Aktualizujemy stan formData
         setFormData(initialFormData);
       })
       .catch((error) => console.error('Error fetching course details:', error));

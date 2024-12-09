@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom'
 export default function SectionPage() {
     const pageTitle = 'Sekcja';
     const pageLinks = [
-        { text: 'Politechnika Gdańska', href: '/#', title: 'Wróć do poprzedniej strony' },
-        { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#', title: 'Obecna strona' },
-        { text: 'Sekcja', href: '/section', title: 'Obecna strona' },
+        { text: 'Politechnika Gdańska', href: '/#'},
+        { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#'},
+        { text: 'Sekcja', href: '/section'},
   ];
     return(
         <div>

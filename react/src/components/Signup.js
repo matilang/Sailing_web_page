@@ -1,5 +1,4 @@
 import { useState } from 'react'
-// import Footer from './Footer'
 import '../App.css'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
