@@ -36,28 +36,30 @@ export default function Footer() {
 
 
     return (
-        <div className='footer-container'>
-            <div className='footer-columns'>
-                {columns.map((column, index) => (
-                    <FooterColumn key={index} title={column.title} links={column.links} />
-                ))}
+        <footer>
+            <div className='footer-container'>
+                <div className='footer-columns'>
+                    {columns.map((column, index) => (
+                        <FooterColumn key={index} title={column.title} links={column.links} />
+                    ))}
+                </div>
+                <div className='logos'  style={logoStyle}>
+                    <Link to='/#' alt='logo-PG'>
+                        <img src={PG_logo}
+                            alt=''
+                            style={{ width: '100px',
+                                    paddingRight: '20px' }} />
+                    </Link>
+                    <Link to='/#' alt='logo-PG'>
+                        <img src={F_logo}
+                            alt=''
+                            style={{ width: '200px',
+                                    paddingLeft: '20px',
+                                    borderLeft: "1px solid #eee" }} />
+                    </Link>
+                </div>
             </div>
-            <div className='logos'  style={logoStyle}>
-                <Link to='/#' alt='logo-PG'>
-                    <img src={PG_logo}
-                         alt=''
-                         style={{ width: '100px',
-                                 paddingRight: '20px' }} />
-                </Link>
-                <Link to='/#' alt='logo-PG'>
-                    <img src={F_logo}
-                         alt=''
-                         style={{ width: '200px',
-                                 paddingLeft: '20px',
-                                 borderLeft: "1px solid #eee" }} />
-                </Link>
-            </div>
-        </div>
+        </footer>
     );
 };
 
