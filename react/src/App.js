@@ -21,7 +21,7 @@ import EditCourseForm from './components/EditCourseForm'
 import ArchiviseForm from './components/ArchiviseForm'
 import NewFormTemplate from './components/NewFormTemplate'
 import EditUser from './components/EditUser'
-import UserEditPage from './components/UserEditCourse'
+import UserEditRegistration from './components/UserEditRegistration'
 
 
 function App() {
@@ -49,8 +49,8 @@ function App() {
             <Route path='/archiviseform' element={<ArchiviseForm/>} />
             <Route path='/newformtemplate' element={<NewFormTemplate/>} />
             <Route path='/userpage' element={<UserPage />} />
-            <Route path='/edituserpage' element={<EditUser/>} />
-            <Route path='/usereditpage' element={<UserEditPage/>} />
+            <Route path='/edituser' element={<EditUser/>} />
+            <Route path='/usereditregistration' element={<UserEditRegistration/>} />
           </Routes>
           <Footer/>
         </React.Fragment>

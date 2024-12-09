@@ -1,5 +1,5 @@
 import React, {useRef} from 'react'
-import './Navbar.css';
+import '../App.css';
 import logo from '../images/pg-logotyp.svg'
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
@@ -37,8 +37,7 @@ function Navbar() {
       <div className='main-bar'>
         {isLogged ? (
               <button className='btn' onClick={LogoutUser}>
-              {/* <a href='/'>Wyloguj się</a> */}
-              Wyloguj się
+              <Link href='/'>Wyloguj się</Link>
             </button>
         ) : (
           <button className='btn'>

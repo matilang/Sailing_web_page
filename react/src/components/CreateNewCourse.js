@@ -46,50 +46,53 @@ const CreateNewCourse = () => {
 
     <div>
     <TitleBar mainTitle={pageTitle} pageLinks={pageLinks} />
-    <div className='regist'>
-    <form onSubmit={handleSubmit}>
-        <label>
-            Nazwa kursu:
-            <input type="text" name="name" value={formData.name} onChange={handleChange} required />
-        </label>
+    <div className='text'>
+      <h3>Dane nowego kursu</h3>
+      <div className='regist'>
+      <form onSubmit={handleSubmit}>
+          <label>
+              Nazwa kursu:
+              <input type="text" name="name" value={formData.name} onChange={handleChange} required />
+          </label>
 
-        <label>
-            Opis:
-            <input type="text" name="description" value={formData.description} onChange={handleChange} required />
-        </label>
+          <label>
+              Opis:
+              <input type="text" name="description" value={formData.description} onChange={handleChange} required />
+          </label>
 
-        <label>
-            Koszt dla Studenta:
-            <input type="text" name="costForStudents" value={formData.costForStudents} onChange={handleChange} required />
-        </label>
+          <label>
+              Koszt dla Studenta:
+              <input type="text" name="costForStudents" value={formData.costForStudents} onChange={handleChange} required />
+          </label>
 
-        <label>
-            Koszt dla instruktorów:
-            <input type="text" name="costForWorkers" value={formData.costForWorkers} onChange={handleChange} required />
-        </label>
+          <label>
+              Koszt dla instruktorów:
+              <input type="text" name="costForWorkers" value={formData.costForWorkers} onChange={handleChange} required />
+          </label>
 
-        <label>
-            Koszt dla członków AWS:
-            <input type="text" name="costForAWSMembers" value={formData.costForAWSMembers} onChange={handleChange} required />
-        </label>
+          <label>
+              Koszt dla członków AWS:
+              <input type="text" name="costForAWSMembers" value={formData.costForAWSMembers} onChange={handleChange} required />
+          </label>
 
-        <label>
-            Koszt bez zniżek:
-            <input type="text" name="regularCost" value={formData.regularCost} onChange={handleChange} required />
-        </label>
+          <label>
+              Koszt bez zniżek:
+              <input type="text" name="regularCost" value={formData.regularCost} onChange={handleChange} required />
+          </label>
 
-        <label>
-            Data:
-            <input type="date" name="dates" value={formData.dates} onChange={handleChange} required />
-        </label>
+          <label>
+              Data:
+              <input type="date" name="dates" value={formData.dates} onChange={handleChange} required />
+          </label>
 
-        <label>
-            Czas trwania kursu (dni):
-            <input type="text" name="courseDurationDays" value={formData.courseDurationDays} onChange={handleChange} required />
-        </label>
+          <label>
+              Czas trwania kursu (dni):
+              <input type="text" name="courseDurationDays" value={formData.courseDurationDays} onChange={handleChange} required />
+          </label>
 
-      <button type="submit">Create Course</button>
-      </form>
+        <button type="submit">Create Course</button>
+        </form>
+        </div>
       </div>
       <SideHeader/>
       </div>

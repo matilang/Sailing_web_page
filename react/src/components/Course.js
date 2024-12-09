@@ -40,7 +40,7 @@ export const Course = ({ course, isAdmin, isUserPage, isArchived}) => {
 
   const handleUserEditCourse = (courseId) => {
     localStorage.setItem('courseId', courseId);
-    navigate('/usereditpage')
+    navigate('/usereditregistration')
   };
 
   const handleDeletefromCourses = (courseId) => {
@@ -57,16 +57,12 @@ export const Course = ({ course, isAdmin, isUserPage, isArchived}) => {
       <p>Data rozpoczęcia: {new Date(course.dates[0]).toLocaleDateString()}</p>
       <div className='button-group'>
         <button onClick={() => handleCourseDetails(course._id)}>Szczegóły</button>
-        {!isArchived && (
-        <div> 
-          {!isUserPage && <button onClick={() => handleCourseRegistration(course._id)}>Zapisz się</button>}
-          {isAdmin && <button onClick={() => handleEditCourse(course._id)}>Edytuj Dane</button>}
-          {isAdmin && <button onClick={() => handleNewFormTemplate(course._id)}>Dodaj zapytanie w kursie</button>}
-          {isAdmin && <button onClick={() => handleArchiveCourse(course._id)}>Archiwizuj Kurs</button>}
-          {isUserPage && <button onClick={() => handleUserEditCourse(course._id)}>Edytuj swoje zgłoszenie</button>}
-          {isUserPage && <button onClick={() => handleDeletefromCourses(course._id)}>Wypisz się</button>}
-        </div>
-        )}
+          {!isArchived &&!isUserPage && <button onClick={() => handleCourseRegistration(course._id)}>Zapisz się</button>}
+          {!isArchived &&isAdmin && <button onClick={() => handleEditCourse(course._id)}>Edytuj Dane</button>}
+          {!isArchived &&isAdmin && <button onClick={() => handleNewFormTemplate(course._id)}>Dodaj zapytanie w kursie</button>}
+          {!isArchived &&isAdmin && <button onClick={() => handleArchiveCourse(course._id)}>Archiwizuj Kurs</button>}
+          {!isArchived &&isUserPage && <button onClick={() => handleUserEditCourse(course._id)}>Edytuj swoje zgłoszenie</button>}
+          {!isArchived &&isUserPage && <button onClick={() => handleDeletefromCourses(course._id)}>Wypisz się</button>}
       </div>
     </div>
   );

@@ -22,7 +22,7 @@ export default function SideHeader() {
                 {isLogged && isAdmin && <li><Link to="/createnewcourse">Stwórz Nowy Kurs</Link></li>}
                 {isLogged && isAdmin && <li><Link to="/archiviseform">Archiwum</Link></li>}
                 {isLogged && <li><Link to="/userpage">Moje Kursy</Link></li>}
-                {isLogged && <li><Link to="/edituserpage">Edytuj Dane Użytkownika</Link></li>}
+                {isLogged && <li><Link to="/edituser">Edytuj Dane Użytkownika</Link></li>}
                 <li className="last"><Link to='/contact'>Kontakt</Link></li>
             </ul>
         </div>
