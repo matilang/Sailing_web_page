@@ -1,13 +1,23 @@
-// import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import '../App.css'
+import SideHeader from './SideHeader';
+import TitleBar from './TitleBar';
 
 const UserEditCourse = () => {
 
   const courseId = localStorage.getItem('courseId')
   const navigate = useNavigate()
+  const pageTitle = 'Edytuj Kurs';
+  const pageLinks = [
+    { text: 'Politechnika Gdańska', href: '/#'},
+    { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#'},
+    { text: 'Moje Kursy', href: '/userpage'},
+    { text: 'Edytuj Kurs', href: '/usereditcourse'},
+  ];
+
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -48,6 +58,9 @@ const UserEditCourse = () => {
   };
 
   return (
+  <div>
+    <TitleBar mainTitle={pageTitle} pageLinks={pageLinks} />
+  <div className='text'>
     <div className='regist'>
       <h2>Formularz Zapisu na Kurs Żeglarski - Edycja</h2>
       <form onSubmit={handleSubmit}>
@@ -186,6 +199,9 @@ const UserEditCourse = () => {
         <button type="submit">Zapisz się na kurs</button>
       </form>
     </div>
+    </div>
+  <SideHeader/>
+  </div>
   );
 };
 

@@ -6,9 +6,9 @@ import Question from '../Question';
 const CalendarPage = () => {
     const pageTitle = 'FAQ';
     const pageLinks = [
-        { text: 'Politechnika Gdańska', href: '/#', title: 'Wróć do poprzedniej strony' },
-        { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#', title: 'Obecna strona' },
-        { text: 'FAQ', href: '/calendar', title: 'Obecna strona' },
+        { text: 'Politechnika Gdańska', href: '/#'},
+        { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#'},
+        { text: 'FAQ', href: '/calendar'},
     ];
     const questions = [
             { question: 'Czy gdy został tydzień do kursu mogę nadal się zapisać?', answer: 'Tak, możesz nadal się zapisać nawet gdy został tydzień do kursu. Zachęcamy do szybkiego dokonania zgłoszenia, abyśmy mogli lepiej się przygotować do Twojego udziału. Prosimy o skorzystanie z formularza zgłoszeniowego dostępnego na naszej stronie internetowej lub kontakt z naszym biurem obsługi klienta. Zapraszamy do udziału w naszym kursie!' },

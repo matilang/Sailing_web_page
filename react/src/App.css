@@ -78,7 +78,32 @@
 /* ---------------------------------------------------------------------------------- */
 
 
-.courses button {
+.course-description {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  width: 50%;
+}
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.course-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-group {
+  display: flex; /* Ustawia wszystkie przyciski w jednym wierszu */
+  flex-wrap: wrap; /* Jeśli nie zmieszczą się w wierszu, przejdą do kolejnego */
+  gap: 5px; /* Odstępy między przyciskami */
+  margin-top: 10px; /* Odstęp między przyciskami a treścią kursu */
+}
+
+.course-box button {
   padding: 8px;
   border: 1px solid #000;
   background-color: var(--mainColorLight);
@@ -87,18 +112,26 @@
   border-radius: 10px;
 }
 
-.courses button:hover {
+.course-box button:hover {
   cursor: pointer;
   background-color: var(--mainColor);
 }
 
-.courses li{
+.course-box li{
   padding-bottom: 20px;
 }
 
-.courses ul {
+.course-box ul {
   list-style: none;
 }
+
+.course-box li p {
+  word-wrap: break-word;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
 
 /* ---------------------------------------------------------------------------------- */
 /* ------------------------------------NAVBAR---------------------------------------- */
@@ -435,6 +468,27 @@ p a:hover {
   margin: 40px 0 40px 260px;
 }
 
+/* ---------------------------------------------------------------------------------- */
+/* --------------------------------CREW PAGE-------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+
+.crew-container {
+  max-width: 900px;
+}
+
+.crew-container h3 {
+  margin-right: 200px;
+}
+
+.member-instructor {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 20px 0 40px 260px;
+  min-height: 300px;
+  line-height: 2;
+}
+
 .tile {
   border: 1px solid #ccc;
   padding: 10px;
@@ -451,24 +505,6 @@ p a:hover {
   border: 2px solid #000;
 }
 
-.text-text {
-  display: flex;
-  flex-wrap: wrap;
-  /* display: block; */
-  text-align: center;
-  margin: 20px 0 40px 260px;
-  min-height: 300px;
-  line-height: 2;
-}
-
-.container12 {
-  max-width: 900px;
-}
-
-.container12 h3 {
-  margin-right: 200px;
-}
-
 .tile:hover {
   background-color: #e9f0f5;
   cursor: pointer;
@@ -480,7 +516,7 @@ p a:hover {
 /* ---------------------------------------------------------------------------------- */
 
 .title-bar {
-  background-color: #e9f0f5;
+  background-color: #e9f0f5;  
   padding-top: 10px;
   padding-bottom: 20px;
 }
@@ -609,37 +645,44 @@ p a:hover {
 /* ---------------------------------------------------------------------------------- */
 
 
-.regist h1 {
-  text-align: center;
+.regist h3 {
   color: #043865;
+  margin-bottom: 30px; /* Większy odstęp od formularza */
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .regist form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 450px;
+  align-items: flex-start;  /* Etykiety i inputy będą wyrównane do lewej */
+  justify-content: flex-start;
+  max-width: 600px;  /* Dodanie maksymalnej szerokości dla lepszego wyglądu */
+  box-sizing: border-box;
 }
 
-.regist  label {
-  margin-bottom: 10px;
+.regist label {
+  font-size: 16px;
+  color: #043865;
+  display: block; /* Sprawia, że etykieta jest pełną linią */
 }
 
 .regist input {
-  padding: 8px;
-  margin-bottom: 15px;
+  width: 100%; /* Pełna szerokość inputu */
+  padding: 12px; /* Większe paddingi, aby wyglądały lepiej */
+  margin-bottom: 20px; /* Większy odstęp między polami */
+  border: 2px solid #ddd;  /* Łagodniejsza ramka */
+  border-radius: 8px; /* Zaokrąglone rogi */
+  font-size: 14px; /* Wyrównanie czcionki do etykiety */
 }
 
 .regist button {
-  padding: 10px;
-  margin-bottom: 20px;
-  background-color: #043865;
-  color: #fff;
-  cursor: pointer;
-  border: 10px;
-  display: block;
-  position: center;
+  padding: 8px;
+  border: 1px solid #000;
+  background-color: var(--mainColorLight);
+  color: #eee;
+  margin-right: 10px;
+  border-radius: 10px;
 }
 
 .regist button:hover {

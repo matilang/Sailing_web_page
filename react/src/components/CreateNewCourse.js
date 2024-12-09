@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import TitleBar from './TitleBar';
 import SideHeader from './SideHeader';
 
-const CreateCourseForm = () => {
+const CreateNewCourse = () => {
   const [formData, setFormData] = useState({
     name: '',
     description: '',
@@ -97,7 +97,7 @@ const CreateCourseForm = () => {
   );
 };
 
-export default CreateCourseForm;
+export default CreateNewCourse;
 
 // export function CourseLabel ({name, value, handleChange}) {
 //   <label>

@@ -3,14 +3,12 @@ import Article from '../Article'
 import TitleBar from '../TitleBar'
 import SideHeader from '../SideHeader'
 import { useAuth } from '../AuthContext'
-import { Link } from 'react-router-dom'
 import {articles} from '../ArticleData.js';
 
 
 
 const Body = () => {
 
-    const isAdmin = localStorage.getItem('role') === 'admin';
     const {userRole, role} = useAuth();
     console.log(userRole)
     const pageTitle = 'Sekcja Żeglarska Politechniki Gdańskiej';
@@ -28,7 +26,6 @@ const Body = () => {
                 {articles.map(article => (
                     <Article key={article.id} data={article} />
                 ))}
-            {isAdmin && <Link to='/createcourseform'><button font color='white'>+</button></Link>}
             </div>
             <SideHeader/>
         </section>

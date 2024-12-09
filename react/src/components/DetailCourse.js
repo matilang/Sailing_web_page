@@ -3,6 +3,7 @@ import axios from 'axios';
 import '../App.css'
 import SideHeader from './SideHeader';
 import TitleBar from './TitleBar';
+import {CourseDetails} from './Course';
 
 const DetailCourse = () => {
 
@@ -26,22 +27,8 @@ const DetailCourse = () => {
       <TitleBar mainTitle={pageTitle} pageLinks={pageLinks} />
       <div className='text'>
         <div className='courses'>
-      <h1>Lista Kursów</h1>
-      <ul>
-          <li key={course._id}>
-            <h3>{course.name}</h3>
-            <p>{course.description}</p>
-            <p>Koszt: {course.cost}</p>
-            <p>Data rozpoczęcia: {course.dates}</p>
-            <p>Czas trwania: {course.courseDurationDays} dni</p>
-            {Array.isArray(course.enrolledStudents) && (
-            <p>Liczba zapisanych uczestników: {course.enrolledStudents.length}</p>
-            )}
-            {Array.isArray(course.instructorOfTheCourse) && (
-            <p>Liczba zapisanych instruktorów: {course.instructorOfTheCourse.length}</p>
-            )}
-          </li>
-      </ul>
+          <h1>Szczegółowy opis kursu</h1>
+          <CourseDetails course={course}/>
       </div>
       </div>
       <SideHeader/>

@@ -15,11 +15,12 @@ export default function SideHeader() {
             </div>
             <ul className='downpage-list'>
                 <li><Link to='/section'>Sekcja</Link></li>
-                <li><Link to='/crew'>Załoga</Link></li>
+                <li><Link to='/crewpage'>Załoga</Link></li>
                 <li><Link to='/partner'>Partnerzy</Link></li>
                 <li><Link to='/calendar'>FAQ</Link></li>
                 <li><Link to="/allcourses">Wszystkie Kursy</Link></li>
                 {isLogged && isAdmin && <li><Link to="/createnewcourse">Stwórz Nowy Kurs</Link></li>}
+                {isLogged && isAdmin && <li><Link to="/archiviseform">Archiwum</Link></li>}
                 {isLogged && <li><Link to="/userpage">Moje Kursy</Link></li>}
                 {isLogged && <li><Link to="/edituserpage">Edytuj Dane Użytkownika</Link></li>}
                 <li className="last"><Link to='/contact'>Kontakt</Link></li>

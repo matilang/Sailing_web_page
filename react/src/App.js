@@ -14,7 +14,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import RegistrationForm from './components/RegistrationForm';
 import UserPage from './components/pages/UserPage'
-import CreateCourseForm from './components/CreateNewCourse';
+import CreateNewCourse from './components/CreateNewCourse';
 import AllCourses from './components/AllCourses';
 import DetailCourse from './components/DetailCourse'
 import EditCourseForm from './components/EditCourseForm'
@@ -25,7 +25,6 @@ import UserEditPage from './components/UserEditCourse'
 
 
 function App() {
-  // const isLoggedIn = null;
 
   return (
     <div className='App'>
@@ -35,7 +34,7 @@ function App() {
           <Routes>
             <Route path="/" element={<WelcomePage/ >} />
             <Route path='/section' element={<SectionPage />} />
-            <Route path='/crew' element={<CrewPage />} />
+            <Route path='/crewpage' element={<CrewPage />} />
             <Route path='/partner' element={<PartnerPage />} />
             <Route path='/calendar' element={<CalendarPage />} />
             <Route path='/contact' element={<ContactPage />} />
@@ -43,13 +42,13 @@ function App() {
             <Route path='/signup' element={<Signup />} />
             <Route path='/login' element={<Login />} />
             <Route path='/registrationform' element={<RegistrationForm/>} />
-            <Route path='/userpage' element={<UserPage />} />
-            <Route path='/createcourseform' element={<CreateCourseForm/>} />
+            <Route path='/createnewcourse' element={<CreateNewCourse/>} />
             <Route path='/allcourses' element={<AllCourses/>} />
             <Route path='/detailcourse' element={<DetailCourse/>} />
             <Route path='/editcourseform' element={<EditCourseForm/>} />
             <Route path='/archiviseform' element={<ArchiviseForm/>} />
             <Route path='/newformtemplate' element={<NewFormTemplate/>} />
+            <Route path='/userpage' element={<UserPage />} />
             <Route path='/edituserpage' element={<EditUser/>} />
             <Route path='/usereditpage' element={<UserEditPage/>} />
           </Routes>

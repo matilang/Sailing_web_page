@@ -10,7 +10,7 @@ import Signup from "./components/Signup";
 import Login from "./components/Login";
 import RegistrationForm from "./components/RegistrationForm";
 import UserPage from "./components/pages/UserPage";
-import CreateCourseForm from "./components/CreateNewCourse";
+import CreateNewCourse from "./components/CreateNewCourse";
 import AllCourses from "./components/AllCourses";
 import DetailCourse from "./components/DetailCourse";
 import EditCourseForm from "./components/EditCourseForm";
@@ -18,6 +18,7 @@ import ArchiviseForm from "./components/ArchiviseForm";
 import NewFormTemplate from "./components/NewFormTemplate";
 import EditUser from "./components/EditUser";
 import UserEditPage from "./components/UserEditCourse";
+import CreateNewCourse from "./components/CreateNewCourse";
 
 export const router = createBrowserRouter(
   [
@@ -32,7 +33,7 @@ export const router = createBrowserRouter(
     { path: "/login", element: <Login /> },
     { path: "/registrationform", element: <RegistrationForm /> },
     { path: "/userpage", element: <UserPage /> },
-    { path: "/createcourseform", element: <CreateCourseForm /> },
+    { path: "/createnewcourse", element: <CreateNewCourse /> },
     { path: "/allcourses", element: <AllCourses /> },
     { path: "/detailcourse", element: <DetailCourse /> },
     { path: "/editcourseform", element: <EditCourseForm /> },

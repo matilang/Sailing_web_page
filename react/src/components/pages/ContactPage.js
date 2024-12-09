@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom'
 export default function ContactPage() {
     const pageTitle = 'Kontakt';
     const pageLinks = [
-        { text: 'Politechnika Gdańska', href: '/#', title: 'Wróć do poprzedniej strony' },
-        { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#', title: 'Obecna strona' },
-        { text: 'Kontakt', href: '/contact', title: 'Obecna strona' },
+        { text: 'Politechnika Gdańska', href: '/#'},
+        { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#'},
+        { text: 'Kontakt', href: '/contact'},
   ];
     return(
         <div>
