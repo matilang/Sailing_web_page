@@ -1,4 +1,4 @@
-import anon from '../../images/male_icon.svg'
+import anon from '../images/male_icon.svg'
 
 export const pageTitle = 'Załoga';
 

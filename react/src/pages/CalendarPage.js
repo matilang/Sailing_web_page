@@ -1,7 +1,7 @@
-import '../../App.css'
-import SideHeader from '../SideHeader';
-import TitleBar from '../TitleBar';
-import Question from '../Question';
+import '../App.css'
+import SideHeader from '../components/SideHeader';
+import TitleBar from '../components/TitleBar';
+import Question from '../components/Question';
 
 const CalendarPage = () => {
     const pageTitle = 'FAQ';

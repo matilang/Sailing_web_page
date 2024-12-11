@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import yacht from '../images/baner_yacht.jpg';
 import '../App.css'
-import TitleBar from './TitleBar';
+import TitleBar from '../components/TitleBar';
 import React from 'react';
 
 function generateArticleList(items) {

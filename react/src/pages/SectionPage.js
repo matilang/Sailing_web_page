@@ -1,6 +1,6 @@
-import '../../App.css'
-import SideHeader from '../SideHeader';
-import TitleBar from '../TitleBar';
+import '../App.css'
+import SideHeader from '../components/SideHeader';
+import TitleBar from '../components/TitleBar';
 import { Link } from 'react-router-dom'
 
 export default function SectionPage() {

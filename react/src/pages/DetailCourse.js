@@ -1,9 +1,9 @@
 import React, { useState} from 'react';
 import axios from 'axios';
 import '../App.css'
-import SideHeader from './SideHeader';
-import TitleBar from './TitleBar';
-import {CourseDetails} from './Course';
+import SideHeader from '../components/SideHeader';
+import TitleBar from '../components/TitleBar';
+import {CourseDetails} from '../components/Course';
 
 const DetailCourse = () => {
 

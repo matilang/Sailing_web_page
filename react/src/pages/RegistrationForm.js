@@ -2,8 +2,8 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import '../App.css'
-import TitleBar from './TitleBar';
-import SideHeader from './SideHeader';
+import TitleBar from '../components/TitleBar';
+import SideHeader from '../components/SideHeader';
 
 const RegistrationForm = () => {
 

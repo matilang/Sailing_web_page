@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import TitleBar from "../TitleBar";
-import SideHeader from "../SideHeader";
-import '../../App.css'
-import { Course } from "../Course";
-import PaymentUpload from '../PaymentUpload.js'
+import TitleBar from "../components/TitleBar";
+import SideHeader from "../components/SideHeader";
+import '../App.css'
+import { Course } from "../components/Course";
+import PaymentUpload from '../components/PaymentUpload.js'
 
 
 const UserPage = () => {

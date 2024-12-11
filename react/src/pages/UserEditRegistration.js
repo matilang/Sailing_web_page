@@ -1,9 +1,9 @@
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import '../App.css';
-import SideHeader from './SideHeader';
-import TitleBar from './TitleBar';
+import '../App.css'
+import SideHeader from '../components/SideHeader';
+import TitleBar from '../components/TitleBar';
 
 const UserEditCourse = () => {
   const courseId = localStorage.getItem('courseId');

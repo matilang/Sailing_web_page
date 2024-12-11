@@ -1,7 +1,7 @@
 import axios from 'axios';
-import TitleBar from './TitleBar';
-import SideHeader from './SideHeader';
-import {Course} from './Course.js'
+import TitleBar from '../components/TitleBar.js';
+import SideHeader from '../components/SideHeader.js';
+import {Course} from '../components/Course.js'
 import React, { useState, useEffect } from 'react';
 
 const ArchiviseForm = () => {

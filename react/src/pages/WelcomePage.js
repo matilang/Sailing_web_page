@@ -1,9 +1,9 @@
-import '../../App.css'
-import Article from '../Article'
-import TitleBar from '../TitleBar'
-import SideHeader from '../SideHeader'
-import { useAuth } from '../AuthContext'
-import {articles} from '../ArticleData.js';
+import '../App.css'
+import Article from '../components/Article'
+import TitleBar from '../components/TitleBar'
+import SideHeader from '../components/SideHeader'
+import { useAuth } from '../components/AuthContext'
+import {articles} from '../components/ArticleData';
 
 
 

@@ -1,27 +1,27 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer'
-import WelcomePage from './components/pages/WelcomePage'
-import SectionPage from './components/pages/SectionPage'
-import CrewPage from './components/pages/CrewPage';
-import PartnerPage from './components/pages/PartnerPage';
-import CalendarPage from './components/pages/CalendarPage';
-import ContactPage from './components/pages/ContactPage';
-import FullArticle1 from './components/FullArticle1';
-import Signup from './components/Signup';
-import Login from './components/Login';
+import WelcomePage from './pages/WelcomePage'
+import SectionPage from './pages/SectionPage'
+import CrewPage from './pages/CrewPage';
+import PartnerPage from './pages/PartnerPage';
+import CalendarPage from './pages/CalendarPage';
+import ContactPage from './pages/ContactPage';
+import FullArticle1 from './pages/FullArticle1';
+import Signup from './pages/Signup';
+import Login from './pages/Login';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import RegistrationForm from './components/RegistrationForm';
-import UserPage from './components/pages/UserPage'
-import CreateNewCourse from './components/CreateNewCourse';
-import AllCourses from './components/AllCourses';
-import DetailCourse from './components/DetailCourse'
-import EditCourseForm from './components/EditCourseForm'
-import ArchiviseForm from './components/ArchiviseForm'
-import NewFormTemplate from './components/NewFormTemplate'
-import EditUser from './components/EditUser'
-import UserEditRegistration from './components/UserEditRegistration'
+import RegistrationForm from './pages/RegistrationForm';
+import UserPage from './pages/UserPage'
+import CreateNewCourse from './pages/CreateNewCourse';
+import AllCourses from './pages/AllCourses';
+import DetailCourse from './pages/DetailCourse'
+import EditCourseForm from './pages/EditCourseForm'
+import ArchiviseForm from './pages/ArchiviseForm'
+import NewFormTemplate from './pages/NewFormTemplate'
+import EditUser from './pages/EditUser'
+import UserEditRegistration from './pages/UserEditRegistration'
 
 
 function App() {

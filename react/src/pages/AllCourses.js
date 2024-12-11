@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import {Course} from './Course';
-import SideHeader from './SideHeader';
-import TitleBar from './TitleBar';
+import {Course} from '../components/Course';
+import SideHeader from '../components/SideHeader';
+import TitleBar from '../components/TitleBar';
 import axios from 'axios';
+import '../App.css'
 
 const AllCourses = () => {
   const [courses, setCourses] = useState([]);

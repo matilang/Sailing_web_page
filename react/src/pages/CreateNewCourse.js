@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import TitleBar from './TitleBar';
-import SideHeader from './SideHeader';
+import TitleBar from '../components/TitleBar';
+import SideHeader from '../components/SideHeader';
 
 const CreateNewCourse = () => {
   const [formData, setFormData] = useState({

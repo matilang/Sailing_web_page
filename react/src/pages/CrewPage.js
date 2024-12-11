@@ -1,9 +1,9 @@
 import React from 'react';
-import '../../App.css';
-import SideHeader from '../SideHeader';
-import TitleBar from '../TitleBar';
-import { pageLinks, pageTitle, instructorsData, racingTeamData } from './CrewPageData';
-import { Instructor, Member } from '../MemberInstructor';
+import '../App.css';
+import SideHeader from '../components/SideHeader';
+import TitleBar from '../components/TitleBar';
+import { pageLinks, pageTitle, instructorsData, racingTeamData } from '../components/CrewPageData';
+import { Instructor, Member } from '../components/MemberInstructor';
 
 export default function CrewPage() {
   return (
