@@ -27,11 +27,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "proxy": "http://node_server:3000",
+    "proxy": "http://localhost:3000",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "proxy": "http://node_server:3000",
+  "proxy": "http://localhost:3000",
   "eslintConfig": {
     "extends": [
       "react-app",
