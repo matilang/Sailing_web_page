@@ -16,7 +16,7 @@ const CalendarPage = () => {
 
   ];
     return(
-        <div>
+        <div className='main-content'>
             <TitleBar mainTitle={pageTitle} pageLinks={pageLinks}/>
             <Question questions={questions}/>
             <SideHeader/>

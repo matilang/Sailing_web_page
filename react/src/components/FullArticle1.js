@@ -37,7 +37,7 @@ export default function FullArticle1() {
 
 
     return(
-        <div>
+        <div className='main-content'>
             <TitleBar mainTitle={pageTitle} pageLinks={pageLinks}/>
             <div className="container1">
                 <div className='article-dates'>Data dodania: 10-20-2020</div>

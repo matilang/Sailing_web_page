@@ -36,7 +36,7 @@ const AllCourses = () => {
   if (error) return <p>{error}</p>;
 
   return (
-  <div>
+  <div className='main-content'>
     <TitleBar mainTitle={pageTitle} pageLinks={pageLinks} />
     <div className='text'>
       <h1>Lista Kursów</h1>

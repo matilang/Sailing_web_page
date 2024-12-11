@@ -43,7 +43,7 @@ const UserPage = () => {
     }, [registrations]);
 
     return (
-      <div>
+      <div className='main-content'>
         <TitleBar mainTitle={pageTitle} pageLinks={pageLinks} />
           <div className="text">
             <div className="course-list">
@@ -51,7 +51,7 @@ const UserPage = () => {
                   <div className='course-list'>
                     {detailedCourses.map(course => (
                       <div className="user-course-item">
-                        <Course 
+                        <Course
                           key={course._id}
                           course={course}
                           isAdmin={isAdmin}

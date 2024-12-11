@@ -26,7 +26,7 @@ function Login() {
 
 
     return (
-      <div>
+      <div className='main-content'>
         <div className='log-background'>
           <div className='log-box'>
             <h2>Logowanie</h2>

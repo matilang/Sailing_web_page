@@ -7,7 +7,7 @@ import { Instructor, Member } from '../MemberInstructor';
 
 export default function CrewPage() {
   return (
-    <div>
+    <div className='main-content'>
       <TitleBar mainTitle={pageTitle} pageLinks={pageLinks} />
       <div className='crew-container'>
         <div className='member-instructor'>

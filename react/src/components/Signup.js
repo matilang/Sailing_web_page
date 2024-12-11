@@ -21,7 +21,7 @@ function Signup() {
     }
 
     return (
-        <div>
+        <div className='main-content'>
             <div className='log-background'>
                 <div className='log-box'>
                     <h2>Rejestracja</h2>

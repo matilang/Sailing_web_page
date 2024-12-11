@@ -58,7 +58,7 @@ const CreateCourseForm = () => {
   };
 
   return (
-    <div>
+    <div className='main-content'>
       <TitleBar mainTitle={pageTitle} pageLinks={pageLinks} />
       <div className='text'>
         <div className='regist'>

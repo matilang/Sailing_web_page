@@ -37,7 +37,7 @@ const ArchiviseForm = () => {
 
 
   return (
-    <div>
+    <div className='main-content'>
       <TitleBar mainTitle={pageTitle} pageLinks={pageLinks} />
     <div className='text'>
       <h3>Zarchiwizowane kursy</h3>

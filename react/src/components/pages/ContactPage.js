@@ -11,7 +11,7 @@ export default function ContactPage() {
         { text: 'Kontakt', href: '/contact'},
   ];
     return(
-        <div>
+        <div className='main-content'>
             <TitleBar mainTitle={pageTitle} pageLinks={pageLinks}/>
             <div className='container1'>
                 <div className='text'>

@@ -19,7 +19,7 @@ const Body = () => {
 
 
     return (
-      <div>
+      <div className='main-content'>
         <TitleBar mainTitle={pageTitle} pageLinks={pageLinks} />
         <section className="main">
             <div className='container2'>
