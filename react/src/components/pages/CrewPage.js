@@ -3,7 +3,7 @@ import '../../App.css';
 import SideHeader from '../SideHeader';
 import TitleBar from '../TitleBar';
 import { pageLinks, pageTitle, instructorsData, racingTeamData } from './CrewPageData';
-import { Instructor, Member } from '../MemberInstructor'; // Import nazwanych eksportów
+import { Instructor, Member } from '../MemberInstructor';
 
 export default function CrewPage() {
   return (

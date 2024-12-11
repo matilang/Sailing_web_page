@@ -100,10 +100,10 @@
 }
 
 .button-group {
-  display: flex; /* Ustawia wszystkie przyciski w jednym wierszu */
-  flex-wrap: wrap; /* Jeśli nie zmieszczą się w wierszu, przejdą do kolejnego */
-  gap: 5px; /* Odstępy między przyciskami */
-  margin-top: 10px; /* Odstęp między przyciskami a treścią kursu */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
 }
 
 .course-box button {
@@ -145,7 +145,6 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	height: 110px;
-	/* padding: 0 100px; */
 	background-color: var(--secondary);
 	color: var(--white);
 }
@@ -157,7 +156,6 @@ header div,nav {
 
 .logo-bar {
 	display: flex;
-	/* align-items: center; */
 	height: 98%;
   }
 
@@ -217,7 +215,6 @@ header div,nav {
 	position: relative;
 	float: left;
 	background-color: var(--secondary);
-	/* height: 100%; */
 	font-size: 1.25rem;
 	font-weight: 700;
 	padding: 21.5px;
@@ -246,7 +243,7 @@ header div,nav {
 .main-nav .list-styled li {
 	background-color: var(--secondary);
 	padding: 20px;
-	border-bottom: 1px solid var(--mainColorLight); /* Dodano linie oddzielającą elementy listy */
+	border-bottom: 1px solid var(--mainColorLight);
 	font-size: 0.875rem;
 	font-weight: 200;
 	width: 100%;
@@ -262,11 +259,9 @@ header div,nav {
 	cursor: pointer;
 	display: block;
 	max-height: 320px;
-	/* transition-delay: 0.1s; */
 }
 
 .main-nav li:not(:hover) .list-styled {
-	/* transition-delay: 0.5s; */
 	max-height: 0;
 	overflow: hidden;
   }
@@ -337,7 +332,6 @@ nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding-bottom: 20px; */
 }
 
 .answer {
@@ -418,14 +412,6 @@ nav a {
   background-color: #0073a8;
 }
 
-/* a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 500;
-}
-p a:hover {
-  text-decoration: underline;
-} */
 
 /* ---------------------------------------------------------------------------------- */
 /* --------------------------------SECTION PAGE-------------------------------------- */
@@ -524,7 +510,7 @@ p a:hover {
 /* ---------------------------------------------------------------------------------- */
 
 .title-bar {
-  background-color: #e9f0f5;  
+  background-color: #e9f0f5;
   padding-top: 10px;
   padding-bottom: 20px;
 }
@@ -655,7 +641,7 @@ p a:hover {
 
 .regist h3 {
   color: #043865;
-  margin-bottom: 30px; /* Większy odstęp od formularza */
+  margin-bottom: 30px;
   font-size: 24px;
   font-weight: bold;
 }
@@ -663,25 +649,25 @@ p a:hover {
 .regist form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;  /* Etykiety i inputy będą wyrównane do lewej */
+  align-items: flex-start;
   justify-content: flex-start;
-  max-width: 600px;  /* Dodanie maksymalnej szerokości dla lepszego wyglądu */
+  max-width: 600px;
   box-sizing: border-box;
 }
 
 .regist label {
   font-size: 16px;
   color: #043865;
-  display: block; /* Sprawia, że etykieta jest pełną linią */
+  display: block;
 }
 
 .regist input {
-  width: 100%; /* Pełna szerokość inputu */
-  padding: 12px; /* Większe paddingi, aby wyglądały lepiej */
-  margin-bottom: 20px; /* Większy odstęp między polami */
-  border: 2px solid #ddd;  /* Łagodniejsza ramka */
-  border-radius: 8px; /* Zaokrąglone rogi */
-  font-size: 14px; /* Wyrównanie czcionki do etykiety */
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
 }
 
 .regist button {

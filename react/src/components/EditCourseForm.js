@@ -21,17 +21,17 @@ const CreateCourseForm = () => {
 
   const pageTitle = 'Edytuj kurs';
   const pageLinks = [
-    { text: 'Politechnika Gdańska', href: '/#', title: 'Wróć do poprzedniej strony' },
-    { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#', title: 'Wróć do poprzedniej strony' },
-    { text: 'Wszystkie kursy', href: '/allcourses', title: 'Wróć do poprzedniej strony' },
-    { text: 'Edytuj kurs', href: '/editcourseform', title: 'Obecna strona' },
+    { text: 'Politechnika Gdańska', href: '/#'},
+    { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#'},
+    { text: 'Wszystkie kursy', href: '/allcourses'},
+    { text: 'Edytuj kurs', href: '/editcourseform'},
   ];
 
   useEffect(() => {
     const fetchCourseData = async () => {
       try {
         const response = await axios.get(`/courses/${courseId}`);
-        setFormData(response.data); // Zakładamy, że dane kursu z backendu pasują do struktury formData
+        setFormData(response.data);
       } catch (error) {
         console.error('Error fetching course data:', error);
       }

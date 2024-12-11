@@ -11,10 +11,10 @@ const RegistrationForm = () => {
   const navigate = useNavigate()
   const pageTitle = 'Zapisz się na kurs';
     const pageLinks = [
-      { text: 'Politechnika Gdańska', href: '/#', title: 'Wróć do poprzedniej strony' },
-      { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#', title: 'Wróć do poprzedniej strony' },
-      { text: 'Wszystkie kursy', href: '/allcourses', title: 'Wróć do poprzedniej strony'},
-      { text: 'Zapisz się na kurs', href: '/registrationform', title: 'Obecna strona' },
+      { text: 'Politechnika Gdańska', href: '/#'},
+      { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#'},
+      { text: 'Wszystkie kursy', href: '/allcourses'},
+      { text: 'Zapisz się na kurs', href: '/registrationform'},
     ];
 
   const [course, setCourse] = useState(null);
@@ -33,22 +33,18 @@ const RegistrationForm = () => {
     referringSource: "",
   });
 
-  // Pobierz szczegóły kursu w tym samym komponencie
   useEffect(() => {
     axios.get(`/courses/${courseId}`)
       .then(response => {
         const courseData = response.data;
         setCourse(courseData);
 
-        // Inicjalizujemy formData na podstawie dynamicznych pól
         const initialFormData = { ...formData };
 
-        // Połączymy istniejące statyczne pola z dynamicznymi
         courseData.registrationFormTemplate?.fields?.forEach(field => {
-          initialFormData[field.fieldName] = ''; // Ustawiamy początkowe wartości dla dynamicznych pól
+          initialFormData[field.fieldName] = '';
         });
 
-        // Aktualizujemy stan formData
         setFormData(initialFormData);
       })
       .catch(error => console.error('Error fetching course details:', error));
@@ -220,7 +216,6 @@ const RegistrationForm = () => {
               <div key={index} className="form-group">
                 <label htmlFor={field.fieldName}>{field.fieldName}</label>
 
-                {/* Dynamiczne renderowanie inputów na podstawie fieldType */}
                 {field.fieldType === 'text' && (
                   <input
                     type="text"

@@ -12,9 +12,9 @@ const AllCourses = () => {
 
   const pageTitle = 'Wszystkie Kursy';
     const pageLinks = [
-      { text: 'Politechnika Gdańska', href: '/#', title: 'Wróć do poprzedniej strony' },
-      { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#', title: 'Wróć do poprzedniej strony' },
-      { text: 'Wszystkie kursy', href: '/allcourses', title: 'Obecna strona'},
+      { text: 'Politechnika Gdańska', href: '/#'},
+      { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#'},
+      { text: 'Wszystkie kursy', href: '/allcourses'},
     ];
 
 
@@ -42,7 +42,7 @@ const AllCourses = () => {
       <h1>Lista Kursów</h1>
       <div className='course-list'>
         {notArchivedCourses.map(course => (
-          <Course 
+          <Course
             key={course._id}
             course={course}
             isAdmin={isAdmin}

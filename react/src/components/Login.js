@@ -1,14 +1,12 @@
 import '../App.css'
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import { useAuth } from './AuthContext';
 import axios from 'axios';
 
 function Login() {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const navigate = useNavigate()
-  // const {login} = useAuth()
 
   const handleSubmit = (e) => {
     e.preventDefault()

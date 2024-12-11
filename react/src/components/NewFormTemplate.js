@@ -8,7 +8,7 @@ const CreateCourseForm = () => {
   const [formData, setFormData] = useState({
     fieldName: '',
     fieldType: '',
-    isRequired: false, // Początkowa wartość
+    isRequired: false,
   });
 
   const courseId = localStorage.getItem('courseId');
@@ -16,10 +16,10 @@ const CreateCourseForm = () => {
 
   const pageTitle = 'Dodaj pole zapytania w kursie';
     const pageLinks = [
-      { text: 'Politechnika Gdańska', href: '/#', title: 'Wróć do poprzedniej strony' },
-      { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#', title: 'Wróć do poprzedniej strony' },
-      { text: 'Wszystkie kursy', href: '/allcourses', title: 'Wróć do poprzedniej strony'},
-      { text: 'Dodaj pole zapytania w kursie', href: '/newformtemplate', title: 'Obecna strona' },
+      { text: 'Politechnika Gdańska', href: '/#'},
+      { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#'},
+      { text: 'Wszystkie kursy', href: '/allcourses'},
+      { text: 'Dodaj pole zapytania w kursie', href: '/newformtemplate'},
     ];
 
   const handleChange = (e) => {

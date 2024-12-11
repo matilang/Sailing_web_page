@@ -16,10 +16,9 @@ export const AuthProvider = ({ children }) => {
   const logout = () => {
 
     setTimeout(() => {
-      
+
       setIsLoggedIn(false);
       setUserRole(null);
-      // setUserCourses([]);
     }, 2000);
   };
 
