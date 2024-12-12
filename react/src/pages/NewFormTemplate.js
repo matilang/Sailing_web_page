@@ -48,6 +48,7 @@ const CreateCourseForm = () => {
   return (
     <div className='main-content'>
       <TitleBar mainTitle={pageTitle} pageLinks={pageLinks} />
+      <div className='text'>
       <div className='regist'>
       <form onSubmit={handleSubmit}>
         <label>
@@ -65,6 +66,7 @@ const CreateCourseForm = () => {
 
         <button type="submit">Utwórz nowe zapytanie</button>
         </form>
+      </div>
       </div>
       <SideHeader/>
     </div>

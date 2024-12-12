@@ -7,7 +7,7 @@ import { Instructor, Member } from '../components/MemberInstructor';
 
 export default function CrewPage() {
   return (
-    <div className='main-content'>
+    <div>
       <TitleBar mainTitle={pageTitle} pageLinks={pageLinks} />
       <div className='crew-container'>
         <div className='member-instructor'>
