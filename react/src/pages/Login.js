@@ -15,7 +15,7 @@ function Login() {
         console.log('Id :', result)
         console.log(result.data.message)
         if(result.data.message === 'Login successful') {
-                navigate('/');
+                navigate('/sailing-webpage');
                 localStorage.setItem('islogged','true')
                 localStorage.setItem('role', result.data.user.role)
                 console.log(localStorage.getItem('islogged'))

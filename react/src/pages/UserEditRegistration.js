@@ -10,8 +10,8 @@ const UserEditCourse = () => {
   const navigate = useNavigate();
   const pageTitle = 'Edytuj Kurs';
   const pageLinks = [
-    { text: 'Politechnika Gdańska', href: '/#' },
-    { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#' },
+    { text: 'Politechnika Gdańska', href: '/sailing-webpage' },
+    { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/sailing-webpage' },
     { text: 'Moje Kursy', href: '/userpage' },
     { text: 'Edytuj Kurs', href: '/usereditcourse' },
   ];

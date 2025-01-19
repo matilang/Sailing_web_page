@@ -3,8 +3,8 @@ import anon from '../images/male_icon.svg'
 export const pageTitle = 'Załoga';
 
 export const pageLinks = [
-    { text: 'Politechnika Gdańska', href: '/#'},
-    { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#'},
+    { text: 'Politechnika Gdańska', href: '/sailing-webpage'},
+    { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/sailing-webpage'},
     { text: 'Załoga', href: '/crew'},
   ];
 

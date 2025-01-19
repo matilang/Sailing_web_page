@@ -21,8 +21,8 @@ const CreateCourseForm = () => {
 
   const pageTitle = 'Edytuj kurs';
   const pageLinks = [
-    { text: 'Politechnika Gdańska', href: '/#'},
-    { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#'},
+    { text: 'Politechnika Gdańska', href: '/sailing-webpage'},
+    { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/sailing-webpage'},
     { text: 'Wszystkie kursy', href: '/allcourses'},
     { text: 'Edytuj kurs', href: '/editcourseform'},
   ];

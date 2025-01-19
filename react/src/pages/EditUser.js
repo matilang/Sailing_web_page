@@ -9,8 +9,8 @@ const EditUser = () => {
   const navigate = useNavigate();
   const pageTitle = 'Edytuj Dane Użytkownika';
   const pageLinks = [
-    { text: 'Politechnika Gdańska', href: '/#' },
-    { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#' },
+    { text: 'Politechnika Gdańska', href: '/sailing-webpage' },
+    { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/sailing-webpage' },
     { text: 'Edytuj Dane Użytkownika', href: '/edituser' },
   ];
 

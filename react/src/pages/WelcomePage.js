@@ -13,8 +13,8 @@ const Body = () => {
     console.log(userRole)
     const pageTitle = 'Sekcja Żeglarska Politechniki Gdańskiej';
     const pageLinks = [
-        { text: 'Politechnika Gdańska', href: '/#', title: 'Wróć do poprzedniej strony' },
-        { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#', title: 'Obecna strona' },
+        { text: 'Politechnika Gdańska', href: '/sailing-webpage', title: 'Wróć do poprzedniej strony' },
+        { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/sailing-webpage', title: 'Obecna strona' },
   ];
 
 

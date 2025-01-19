@@ -11,8 +11,8 @@ const RegistrationForm = () => {
   const navigate = useNavigate()
   const pageTitle = 'Zapisz się na kurs';
     const pageLinks = [
-      { text: 'Politechnika Gdańska', href: '/#'},
-      { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#'},
+      { text: 'Politechnika Gdańska', href: '/sailing-webpage'},
+      { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/sailing-webpage'},
       { text: 'Wszystkie kursy', href: '/allcourses'},
       { text: 'Zapisz się na kurs', href: '/registrationform'},
     ];

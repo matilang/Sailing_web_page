@@ -44,13 +44,13 @@ export default function Footer() {
                     ))}
                 </div>
                 <div className='logos'  style={logoStyle}>
-                    <Link to='/#' alt='logo-PG'>
+                    <Link to='/sailing-webpage' alt='logo-PG'>
                         <img src={PG_logo}
                             alt=''
                             style={{ width: '100px',
                                     paddingRight: '20px' }} />
                     </Link>
-                    <Link to='/#' alt='logo-PG'>
+                    <Link to='/sailing-webpage' alt='logo-PG'>
                         <img src={F_logo}
                             alt=''
                             style={{ width: '200px',

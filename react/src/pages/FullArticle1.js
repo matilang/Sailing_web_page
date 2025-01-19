@@ -12,8 +12,8 @@ export default function FullArticle1() {
 
     const pageTitle = 'Aktulaności';
     const pageLinks = [
-        { text: 'Politechnika Gdańska', href: '/#'},
-        { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#'},
+        { text: 'Politechnika Gdańska', href: '/sailing-webpage'},
+        { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/sailing-webpage'},
         { text: 'Aktulaności', href: '/FullArticle1'},
     ];
 

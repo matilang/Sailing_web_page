@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom'
 export default function ContactPage() {
     const pageTitle = 'Kontakt';
     const pageLinks = [
-        { text: 'Politechnika Gdańska', href: '/#'},
-        { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#'},
+        { text: 'Politechnika Gdańska', href: '/sailing-webpage'},
+        { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/sailing-webpage'},
         { text: 'Kontakt', href: '/contact'},
   ];
     return(
@@ -18,10 +18,10 @@ export default function ContactPage() {
                     <p><h3>Sekcja Żeglarska Politechniki Gdańskiej</h3></p>
                     <ul>
                         <li><strong>adres:</strong> Al. Zwycięstwa 12 80-219 Gdańsk</li>
-                        <li><strong>e-mail:</strong><Link to='/#'>pgzagle@gmail.com</Link></li>
+                        <li><strong>e-mail:</strong><Link to='/sailing-webpage'>pgzagle@gmail.com</Link></li>
                         <li><strong>telefon:</strong>609176750</li>
                         <li><strong>adres strony www:</strong>https://pg.edu.pl/zagle</li>
-                        <li><strong><Link to='/#'>strona 'Żagle PG Ahoooj!' na FB</Link></strong></li>
+                        <li><strong><Link to='/sailing-webpage'>strona 'Żagle PG Ahoooj!' na FB</Link></strong></li>
                     </ul>
                 </div>
             </div>

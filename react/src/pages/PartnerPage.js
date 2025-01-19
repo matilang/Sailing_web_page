@@ -5,8 +5,8 @@ import TitleBar from '../components/TitleBar';
 const PartnerPage = () => {
     const pageTitle = 'Partnerzy';
     const pageLinks = [
-        { text: 'Politechnika Gdańska', href: '/#'},
-        { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#'},
+        { text: 'Politechnika Gdańska', href: '/sailing-webpage'},
+        { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/sailing-webpage'},
         { text: 'Partnerzy', href: '/partner'},
   ];
     return(

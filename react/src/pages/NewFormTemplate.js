@@ -16,8 +16,8 @@ const CreateCourseForm = () => {
 
   const pageTitle = 'Dodaj pole zapytania w kursie';
     const pageLinks = [
-      { text: 'Politechnika Gdańska', href: '/#'},
-      { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#'},
+      { text: 'Politechnika Gdańska', href: '/sailing-webpage'},
+      { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/sailing-webpage'},
       { text: 'Wszystkie kursy', href: '/allcourses'},
       { text: 'Dodaj pole zapytania w kursie', href: '/newformtemplate'},
     ];

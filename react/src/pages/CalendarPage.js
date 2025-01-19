@@ -6,8 +6,8 @@ import Question from '../components/Question';
 const CalendarPage = () => {
     const pageTitle = 'FAQ';
     const pageLinks = [
-        { text: 'Politechnika Gdańska', href: '/#'},
-        { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#'},
+        { text: 'Politechnika Gdańska', href: '/sailing-webpage'},
+        { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/sailing-webpage'},
         { text: 'FAQ', href: '/calendar'},
     ];
     const questions = [

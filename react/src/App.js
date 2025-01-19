@@ -32,7 +32,7 @@ function App() {
         <React.Fragment>
           <Navbar/>
           <Routes>
-            <Route path="/" element={<WelcomePage/ >} />
+            <Route path="/sailing-webpage" element={<WelcomePage />} />
             <Route path='/section' element={<SectionPage />} />
             <Route path='/crewpage' element={<CrewPage />} />
             <Route path='/partner' element={<PartnerPage />} />

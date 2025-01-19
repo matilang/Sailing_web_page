@@ -18,8 +18,8 @@ const CreateNewCourse = () => {
 
   const pageTitle = 'Utwórz nowy kurs';
     const pageLinks = [
-      { text: 'Politechnika Gdańska', href: '/#', title: 'Wróć do poprzedniej strony' },
-      { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#', title: 'Wróć do poprzedniej strony' },
+      { text: 'Politechnika Gdańska', href: '/sailing-webpage', title: 'Wróć do poprzedniej strony' },
+      { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/sailing-webpage', title: 'Wróć do poprzedniej strony' },
       { text: 'Utwórz nowy kurs', href: '/createnewcourse', title: 'Obecna strona'},
     ];
 

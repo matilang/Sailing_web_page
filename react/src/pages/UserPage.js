@@ -13,8 +13,8 @@ const UserPage = () => {
     const isAdmin = localStorage.getItem('role') === 'admin';
     const pageTitle = 'Moje Kursy';
     const pageLinks = [
-      { text: 'Politechnika Gdańska', href: '/#'},
-      { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#'},
+      { text: 'Politechnika Gdańska', href: '/sailing-webpage'},
+      { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/sailing-webpage'},
       { text: 'Moje Kursy', href: '/userpage'},
     ];
 

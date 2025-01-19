@@ -11,8 +11,8 @@ const DetailCourse = () => {
   const [course, setCourse] = useState([]);
   const pageTitle = 'Szczegóły';
     const pageLinks = [
-      { text: 'Politechnika Gdańska', href: '/#', title: 'Wróć do poprzedniej strony' },
-      { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#', title: 'Wróć do poprzedniej strony' },
+      { text: 'Politechnika Gdańska', href: '/sailing-webpage', title: 'Wróć do poprzedniej strony' },
+      { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/sailing-webpage', title: 'Wróć do poprzedniej strony' },
       { text: 'Wszystkie kursy', href: '/allcourses', title: 'Wróć do poprzedniej strony'},
       { text: 'Szczegóły', href: '/detailcourse', title: 'Obecna strona' },
     ];

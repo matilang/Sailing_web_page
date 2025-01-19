@@ -11,7 +11,7 @@ export default function SideHeader() {
 
         <div className='side-header'>
             <div className='main-header'>
-                    <h2><Link to='/#'>Sekcja Żeglarska PG</Link></h2>
+                    <h2><Link to='/sailing-webpage'>Sekcja Żeglarska PG</Link></h2>
             </div>
             <ul className='downpage-list'>
                 <li><Link to='/section'>Sekcja</Link></li>
@@ -19,7 +19,6 @@ export default function SideHeader() {
                 <li><Link to='/partner'>Partnerzy</Link></li>
                 <li><Link to='/calendar'>FAQ</Link></li>
                 <li><Link to="/allcourses">Wszystkie Kursy</Link></li>
-                <li><Link to="/registrationform">Rejestracja</Link></li>
                 {isLogged && isAdmin && <li><Link to="/createnewcourse">Stwórz Nowy Kurs</Link></li>}
                 {isLogged && isAdmin && <li><Link to="/archiviseform">Archiwum</Link></li>}
                 {isLogged && <li><Link to="/userpage">Moje Kursy</Link></li>}

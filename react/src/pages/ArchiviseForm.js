@@ -12,8 +12,8 @@ const ArchiviseForm = () => {
   const [courses, setCourses] = useState([]);
   const pageTitle = 'Archiwium';
   const pageLinks = [
-      { text: 'Politechnika Gdańska', href: '/#'},
-      { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/#'},
+      { text: 'Politechnika Gdańska', href: '/sailing-webpage'},
+      { text: 'Sekcja Żeglarska Politechniki Gdańskiej', href: '/sailing-webpage'},
       { text: 'Wszystkie kursy', href: '/allcourses'},
       { text: 'Archiwizacja', href: '/archiviseform'},
     ];

@@ -29,7 +29,7 @@ function Navbar() {
     <header>
       <div className='logo-bar'>
         <div className='site-logo'>
-          <Link to='/#'>
+          <Link to='/sailing-webpage'>
           <img src={logo} alt=''></img>
           </Link>
         </div>
@@ -37,7 +37,7 @@ function Navbar() {
       <div className='main-bar'>
         {isLogged ? (
               <button className='btn' onClick={LogoutUser}>
-              <Link href='/'>Wyloguj się</Link>
+              <Link to='/sailing-webpage'>Wyloguj się</Link>
             </button>
         ) : (
           <button className='btn'>
